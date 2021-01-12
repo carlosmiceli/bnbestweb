@@ -1,0 +1,32 @@
+.sec-dptos{
+    margin-top: 130px;
+
+}
+.section-df{
+    display: flex;
+}
+.filters{
+    margin-left: 35px;
+    margin-top: 60px;
+}
+.titulo-sec-dptos{
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+
+}
+.span-sec-dptos{
+    border-top: solid 5px #f8c217 ;
+    width: 200px;
+    margin: auto auto;
+    transform: rotate(-2deg);
+
+}
+.contenedor-dptos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 70px;
+
+
+}

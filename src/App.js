@@ -1,24 +1,53 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+}from "react-router-dom";
+import 'mdbreact/dist/css/mdb.css';
+import NavB from './Componentes/Navbar';
+import Car from './Componentes/Carousel';
+import BestApar from './Componentes/BestApar';
+import Sumate from './Componentes/Sumate';
+import Pie from './Componentes/Footer';
+import Departamentos from './Pages/Departamentos';
+import Pasos from './Componentes/Pasos';
+import DeptoInfo from './Pages/DeptoInfo';
+import About from './Componentes/About/index';
+import Whatsapp from './Componentes/Whatsapp/whatsapp';
+import BestSale from './Componentes/BestSale';
+import Faqs from './Pages/Faqs';
+import AparLand from './Componentes/AparLand';
+import ValoracionesLand from './Componentes/ValoracionesLand';
+import Blog from './Componentes/Blog/index'
+import SimpleReactLightbox from 'simple-react-lightbox'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <SimpleReactLightbox>
+
+    <Router>
+      <NavB/>
+      <Switch>
+      <Route path="/" exact>
+        <Car/>
+        <About/>
+        <Pasos/>
+        <AparLand/>
+        <ValoracionesLand/>
+        <Sumate/>
+      </Route>
+      <Route exact path="/departamentos" component={Departamentos} />
+      <Route exact path="/departamentos/:id" component={DeptoInfo} />
+      <Route exact path="/faqs" component={Faqs} />
+      <Route exact path="/blog" component={Blog} />
+      </Switch>
+      <Whatsapp/>
+      <Pie/>
+    </Router>
+    </SimpleReactLightbox>
+
   );
 }
 

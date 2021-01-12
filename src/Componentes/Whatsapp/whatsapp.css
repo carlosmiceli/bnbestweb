@@ -1,0 +1,39 @@
+.float{
+	position:fixed;
+	width:70px;
+	height:70px;
+	bottom:40px;
+	right:50px;
+	background-color:#25d366;
+	color:#FFF !important;
+	border-radius:100%;
+	text-align:center;
+  	font-size:40px;
+	box-shadow: 2px 2px 3px black;
+    z-index:100;
+    transition: 2s;
+}
+#wsp{
+    color: white !important;
+}
+
+
+
+.my-float{
+	margin-top:16px;
+}
+
+/*MEDIA QUERYS*/
+@media (min-width:250px) and (max-width:767px){
+	.float{
+		bottom: 15px;
+		right: 5px;
+		width:50px;
+		height:50px;
+		font-size:30px;
+	}
+	.my-float{
+		margin-top:10px;
+	}
+	
+}

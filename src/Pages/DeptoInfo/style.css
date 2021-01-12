@@ -1,0 +1,121 @@
+.contenedor-depto{
+    margin: 130px 150px;
+}
+.nombre-depto{
+    margin-top: 30px;
+    text-transform: uppercase; 
+    font-size: 36px;
+}
+
+/* Sec1: Titulo y descripcion*/
+.seccion1{
+    display: flex;
+    flex-direction: row;
+    margin: 30px 0px;
+}
+
+.descDeptos{
+    width: 100vw;
+    height: 100%;
+
+}
+.texto-desc{
+    width: 100%;
+    line-height: 180%;
+}
+
+/* Prueba de las fotos del grid*/
+
+#prueba{
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+    border-radius: 2% !important;
+}
+
+#prueba2{
+    display: none;
+}
+/*Seccion 2: servicios y precios*/
+
+.seccion2{
+    margin-left: -80px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.amenities{
+    width: 40vw;
+}
+.imagenes-amn{
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
+}
+.chau{
+    padding-left: 55px;
+    padding-top: 12px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.hola{
+    width: 40px;
+    height: 40px;
+    margin-left: 80px;
+    margin-top: 35px;
+}
+/*iconos servicios*/
+#personas{
+    background: url(https://image.flaticon.com/icons/svg/478/478536.svg);
+}
+#banio{
+    background: url(https://image.flaticon.com/icons/svg/853/853788.svg);
+}
+#balcon{
+    background: url(https://image.flaticon.com/icons/svg/82/82490.svg);
+}
+#piso{
+    background: url(https://image.flaticon.com/icons/svg/544/544917.svg);
+}
+#ascensor{
+    background: url(https://image.flaticon.com/icons/svg/887/887331.svg);
+}
+
+
+/*Seccion 3: ubicacion*/
+
+.seccion3{
+    margin: 50px 0px;
+}
+.ubicDeptos{
+    width: 100%;
+    height: 340px;
+}
+/*Seccion 4: evaluaciones*/
+.evaluaciones{
+    width: 100%;
+    height: 340px;
+    padding-top: 50px;
+    margin-right: 15px;
+    text-align: center;
+    
+}
+.ev-texto{
+    width: 60%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+#estrellas{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+}
+
+
+
+
+.similDeptos{
+    width: 100%;
+
+}

@@ -1,0 +1,44 @@
+.about-cont{
+    height: 320px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.span{
+        border-top: solid 5px #f8c217 ;
+        width: 250px;
+        margin: 20px auto;
+        transform: rotate(-2deg);
+
+
+}
+.texto-about{
+    padding-top: 20px;
+    width: 550px;
+    margin: auto auto;
+    font-size: 18px;
+    line-height: 30px;
+
+
+}
+.titulo-about{
+    font-size: 30px;
+    text-transform: uppercase;
+
+}
+@media (max-width: 733px) { 
+
+    .about-cont{
+        margin-bottom: 50px;
+    }
+    .titulo-about{
+        font-size: 23px;
+    }
+    .texto-about{
+        font-size: 14px;
+        width: 320px;
+        margin-bottom: 30px;
+
+
+    }
+}

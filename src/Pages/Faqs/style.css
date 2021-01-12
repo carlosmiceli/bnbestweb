@@ -1,0 +1,12 @@
+
+#cont-accordion{
+    flex-direction: column !important;
+    border: none !important;
+    box-shadow: none !important;
+    margin-top: 80px !important;
+
+}
+
+.faqQuestion {
+    padding: 10px;
+}
