@@ -11,13 +11,19 @@ import {
 import "./style.css";
 
 const Blog = () => {
+
+  let objFecha = new Date()
+  let day = objFecha.getUTCDate();
+  let month = objFecha.getUTCMonth() + 1;
+  let year = objFecha.getUTCFullYear();
+  
+  const Fecha = day + "/" + month + "/" + year
+
   return (
     <div className='cont-blog'>
-      <MDBCard className='my-5 px-5 pb-5' id='card-blog'>
+      <h1 className="page-title">Blog de Best</h1>
+      <MDBCard className='my-5 px-5 pb-5'>
         <MDBCardBody>
-          <h2 className='h1-responsive font-weight-bold text-center my-5'>
-            Recent posts
-          </h2>
           <MDBRow>
             <MDBCol lg='5' xl='4'>
               <MDBView hover className='rounded z-depth-1-half mb-lg-0 mb-4'>
@@ -32,25 +38,17 @@ const Blog = () => {
               </MDBView>
             </MDBCol>
             <MDBCol lg='7' xl='8'>
-              <h3 className='font-weight-bold mb-3 p-0'>
-                <strong>Title of the news</strong>
-              </h3>
+              <h3 className='mb-3 p-0'>Título del artículo</h3>
               <p className='dark-grey-text'>
                 Nam libero tempore, cum soluta nobis est eligendi optio cumque
                 nihil impedit quo minus id quod maxime placeat facere possimus,
-                omnis voluptas assumenda est, omnis dolor repellendus et aut
-                officiis debitis cum soluta nobis est eligendi placeat facere
-                aut rerum.
+                omnis voluptas assumenda est, omnis dolor repellendus...
               </p>
               <p>
-                by{" "}
-                <a href='#!' className='font-weight-bold'>
-                  Florencia Isa Galindo
-                </a>
-                , 19/04/2018
+                Escrito por <a href='#!'>María Betsabé Juarez Ypa</a>, {Fecha}
               </p>
               <MDBBtn color='primary' size='md'>
-                Leer más
+                Leer más...
               </MDBBtn>
             </MDBCol>
           </MDBRow>

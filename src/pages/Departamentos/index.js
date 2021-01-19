@@ -1,12 +1,12 @@
 import "../Departamentos/style.css";
 import React, { useState, useEffect } from "react";
-import "./style.css";
 import Card from "react-bootstrap/Card";
 import FontAwesome from "react-fontawesome";
 import firebase from "../../firebase.js";
 import {
   Link
 }from "react-router-dom";
+import "./style.css";
 
 function useAparments() {
   const [apartments, setAparments] = useState([]);

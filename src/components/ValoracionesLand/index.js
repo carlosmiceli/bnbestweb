@@ -1,7 +1,6 @@
 import React from 'react';
-import './style.css';
 import HomeReviews from '../HomeReviews/index';
-
+import './style.css';
 
 const ValoracionesLand = () => {
     return ( 

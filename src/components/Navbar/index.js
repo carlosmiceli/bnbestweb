@@ -1,12 +1,15 @@
-import React from "react";
-import "./style.css";
+import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import { Nav } from "react-bootstrap";
 import Button from "@material-ui/core/Button";
-import { NavLink } from "react-router-dom";
-import { Link } from 'react-scroll'
+import { NavLink } from "react-router-dom"
+import SumateForm from "../Sumate-Form"; 
+import "./style.css";
 
 const NavB = () => {
+  const [show, setShow] = useState(false);
+  const handleShow = () => setShow(true);
+  const handleClose = () => setShow(false);
   
   return (
     <Navbar fixed='top'>
@@ -28,20 +31,17 @@ const NavB = () => {
         >
           Departamentos
         </NavLink>
-        <Link
-          to="scroll-sumate" 
-          spy={true} 
-          smooth={true} 
-          duration={500} 
+        <div
           className='link-nav'
+          onClick={handleShow}
         >
           Sumá Tu Propiedad
-        </Link>
+        </div>
         <NavLink
           className='link-nav'
-          to='/faqs'
+          to='/faq'
         >
-          Faqs
+          Faq
         </NavLink>
         <NavLink
           className='link-nav'
@@ -61,6 +61,7 @@ const NavB = () => {
           Reservar
       </Button>
       </div>
+      <SumateForm show={show} onHide={handleClose} />
     </Navbar>
   );
 };

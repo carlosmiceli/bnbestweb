@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import './style.css';
 import Mapa from '../../Componentes/Map/index';
 import Credentials from '../../Credentials';
 import BestApar from '../../Componentes/BestApar';
 import Grid from '../../Componentes/Grid'
 import firebase from "../../firebase.js";
+import './style.css';
 
 function useDepto(props) {
     useEffect(() => {

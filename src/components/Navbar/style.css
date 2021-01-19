@@ -27,6 +27,14 @@
   font-size: 0.9em;
 }
 
+.link-nav:hover {
+  cursor: pointer;
+  color: #f8c217;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
 #button-container {
   width: 10%;
 }

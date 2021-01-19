@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import 'mdbreact/dist/css/mdb.css'
 import {
   MDBContainer,
   MDBCollapse,
@@ -21,18 +22,12 @@ class CollapsePage extends Component {
   render() {
     return (
       <MDBContainer id='cont-faqs'>
-        <MDBContainer
-          id='cont-accordion'
-          className='accordion md-accordion accordion-3 z-depth-1-half'
-        >
-          <h2 class='text-center text-uppercase red-text py-4 px-3'>
+        <MDBContainer id='cont-accordion' className='accordion md-accordion accordion-3 z-depth-1-half'>
+          <h1 class='text-center text-uppercase red-text py-4 px-3'>
             Preguntas Frecuentes
-          </h2>
-
-          <hr class='mb-0' />
-
+          </h1>
           <MDBCard className='faqQuestion'>
-            <h5>Horario de check in-out</h5>
+            <h2>Horarios de check-in y check-out</h2>
             <MDBIcon
               icon={
                 this.state.collapseID === "collapse1"
@@ -63,7 +58,7 @@ class CollapsePage extends Component {
           </MDBCard>
           
           <MDBCard className='faqQuestion'>
-              <h5>¿Cómo hago para reservar?</h5>
+              <h2>¿Cómo hago para reservar?</h2>
               <MDBIcon
                 icon={
                   this.state.collapseID === "collapse2"
@@ -94,7 +89,7 @@ class CollapsePage extends Component {
           </MDBCard>
 
           <MDBCard className='faqQuestion'>
-              <h5>¿Quién me espera para darme las llaves?</h5>
+              <h2>¿Quién me espera para darme las llaves?</h2>
               <MDBIcon
                 icon={
                   this.state.collapseID === "collapse3"
@@ -125,7 +120,7 @@ class CollapsePage extends Component {
           </MDBCard>
 
           <MDBCard className='faqQuestion'>
-              <h5>¿Puedo ingresar antes/después del horario?</h5>
+              <h2>¿Puedo ingresar antes/después del horario?</h2>
               <MDBIcon
                 icon={
                   this.state.collapseID === "collapse4"
@@ -156,7 +151,7 @@ class CollapsePage extends Component {
           </MDBCard>
 
           <MDBCard className='faqQuestion'>
-              <h5>¿Puedo retirarme antes/después del horario?</h5>
+              <h2>¿Puedo retirarme antes/después del horario?</h2>
               <MDBIcon
                 icon={
                   this.state.collapseID === "collapse5"
@@ -187,7 +182,7 @@ class CollapsePage extends Component {
           </MDBCard>
 
           <MDBCard className='faqQuestion'>
-              <h5>¿Qué incluye el departamento?</h5>
+              <h2>¿Qué incluye el departamento?</h2>
               <MDBIcon
                 icon={
                   this.state.collapseID === "collapse6"
@@ -218,7 +213,7 @@ class CollapsePage extends Component {
           </MDBCard>
 
           <MDBCard className='faqQuestion'>
-              <h5>¿Con cuánto tiempo de anticipación debo reservar?</h5>
+              <h2>¿Con cuánto tiempo de anticipación debo reservar?</h2>
               <MDBIcon
                 icon={
                   this.state.collapseID === "collapse7"
@@ -249,7 +244,7 @@ class CollapsePage extends Component {
           </MDBCard>
 
           <MDBCard className='faqQuestion'>
-              <h5>¿Por cuánto tiempo puedo alquilar?</h5>
+              <h2>¿Por cuánto tiempo puedo alquilar?</h2>
               <MDBIcon
                 icon={
                   this.state.collapseID === "collapse8"
@@ -280,7 +275,7 @@ class CollapsePage extends Component {
           </MDBCard>
 
           <MDBCard className='faqQuestion'>
-              <h5>¿Cuáles son los medios de pago?</h5>
+              <h2>¿Cuáles son los medios de pago?</h2>
               <MDBIcon
                 icon={
                   this.state.collapseID === "collapse9"
@@ -311,7 +306,7 @@ class CollapsePage extends Component {
           </MDBCard>
 
           <MDBCard className='faqQuestion'>
-              <h5>¿Qué sucede si no puedo presentarme?</h5>
+              <h2>¿Qué sucede si no puedo presentarme?</h2>
               <MDBIcon
                 icon={
                   this.state.collapseID === "collapse10"
@@ -342,7 +337,7 @@ class CollapsePage extends Component {
           </MDBCard>
 
           <MDBCard className='faqQuestion'>
-              <h5>¿Cómo puedo cancelar y con cuánto tiempo se devuelve la seña?</h5>
+              <h2>¿Cómo puedo cancelar y con cuánto tiempo se devuelve la seña?</h2>
               <MDBIcon
                 icon={
                   this.state.collapseID === "collapse11"
@@ -373,7 +368,7 @@ class CollapsePage extends Component {
           </MDBCard>
 
           <MDBCard className='faqQuestion'>
-              <h5>¿Qué sucede si me olvido una pertenencia?</h5>
+              <h2>¿Qué sucede si me olvido una pertenencia?</h2>
               <MDBIcon
                 icon={
                   this.state.collapseID === "collapse12"
@@ -404,7 +399,7 @@ class CollapsePage extends Component {
           </MDBCard>
 
           <MDBCard className='faqQuestion'>
-              <h5>¿Qué debo llevar al departamento?</h5>
+              <h2>¿Qué debo llevar al departamento?</h2>
               <MDBIcon
                 icon={
                   this.state.collapseID === "collapse13"
