@@ -1,53 +1,23 @@
-import React from 'react';
+import React from 'react'
+import './default.scss'
+import NavB from './components/Navbar'
+import Homepage from './pages/Homepage'
+import Whatsapp from './components/Whatsapp';
+import Footer from './components/Footer';
 import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-}from "react-router-dom";
-import 'mdbreact/dist/css/mdb.css';
-import NavB from './Componentes/Navbar';
-import Car from './Componentes/Carousel';
-import BestApar from './Componentes/BestApar';
-import Sumate from './Componentes/Sumate';
-import Pie from './Componentes/Footer';
-import Departamentos from './Pages/Departamentos';
-import Pasos from './Componentes/Pasos';
-import DeptoInfo from './Pages/DeptoInfo';
-import About from './Componentes/About/index';
-import Whatsapp from './Componentes/Whatsapp/whatsapp';
-import BestSale from './Componentes/BestSale';
-import Faqs from './Pages/Faqs';
-import AparLand from './Componentes/AparLand';
-import ValoracionesLand from './Componentes/ValoracionesLand';
-import Blog from './Componentes/Blog/index'
-import SimpleReactLightbox from 'simple-react-lightbox'
-
+  BrowserRouter as Router
+} from "react-router-dom";
 
 function App() {
   return (
-    <SimpleReactLightbox>
-
-    <Router>
-      <NavB/>
-      <Switch>
-      <Route path="/" exact>
-        <Car/>
-        <About/>
-        <Pasos/>
-        <AparLand/>
-        <ValoracionesLand/>
-        <Sumate/>
-      </Route>
-      <Route exact path="/departamentos" component={Departamentos} />
-      <Route exact path="/departamentos/:id" component={DeptoInfo} />
-      <Route exact path="/faqs" component={Faqs} />
-      <Route exact path="/blog" component={Blog} />
-      </Switch>
-      <Whatsapp/>
-      <Pie/>
-    </Router>
-    </SimpleReactLightbox>
-
+    <div className="App">
+      <Router>
+        <NavB/>
+        <Homepage/>
+        <Whatsapp/>
+        <Footer/>
+      </Router> 
+    </div>
   );
 }
 

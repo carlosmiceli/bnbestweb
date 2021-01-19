@@ -1,16 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import './style.css';
-import SwipeableTextMobileStepper from '../../Componentes/SlideFotos/index';
 import Mapa from '../../Componentes/Map/index';
 import Credentials from '../../Credentials';
-import Carousel from 'react-bootstrap/Carousel';
 import BestApar from '../../Componentes/BestApar';
 import Grid from '../../Componentes/Grid'
 import firebase from "../../firebase.js";
 
-function DeptoInfo(props) {
-    const [currentDepto, setCurrentDepto] = useState([]);
-  
+function useDepto(props) {
     useEffect(() => {
       firebase
         .firestore()
@@ -18,36 +14,28 @@ function DeptoInfo(props) {
         .doc(props.match.params.id)
         .get()
         .then(doc => {
-            setCurrentDepto(doc.data())
+            const dep = doc.data()
+            console.log(dep)
+            return dep
         })
-    }, [currentDepto, props.match.params.id]);
-
+    })
+}
 
 const mapURL = `https://maps.googleapis.com/maps/api/js?v=9.4.5.exp&key=${Credentials.mapsKey}`;
 
+function DeptoInfo() {
+    const dep123 = useDepto()
+  
     return (
         <div className='contenedor-depto'>        
-        {/* <Grid/> */}
-        {/* <img
-      id="prueba2"
-      src="https://firebasestorage.googleapis.com/v0/b/best-at-3697b.appspot.com/o/Lavalle%2FLavalle_707_7A_002.jpg?alt=media&token=4b27c25d-5f50-4236-8f7e-5c3ca76893b3"
-      alt="First slide"
-    /> */}
-     {/* <img
-      id="prueba2"
-      className="w-100" 
-      src="https://firebasestorage.googleapis.com/v0/b/best-at-3697b.appspot.com/o/Lavalle%2FLavalle_707_7A_012.jpg?alt=media&token=e768ca69-bbc6-4a74-99c9-b54de1971b91"
-      alt="Third slide"
-    /> */}
+        {/* <Grid fotos={dep123.fotos}/> */}
 
 
-
-<div className="nombre-depto"><h3 className="nombre-depto-txt"> {currentDepto.titulo}</h3></div>
+<div className="nombre-depto"><h3 className="nombre-depto-txt"> {dep123.titulo}</h3></div>
 <hr/>
         <div className="seccion1">
             <div className="descDeptos">
-                <p className="texto-desc">MONOAMBIENTE refaccionado, totalmente equipado y amoblado. Super confortable. PERFECTA UBICACION, zona céntrica con acceso a todos los medios de transporte. PORTERO Y SEGURIDAD PRIVADA LAS 24 HS. Ideal para parejas y viajeros cansados. Cochera (no incluida en nuestro servicio) al frente del edificio. Estaremos para darte la BIENVENIDA¡ ver que te alojes comodamente y solucionar todas tus dudas. Somos amables, atentos y educados. 
-El alojamiento es perfecto para una o dos personas. Tiene lugar para guardar cómodamente todas sus pertenencias. Todo el equipamiento necesario para que realice sus propias comidas, o lugares cerca para pedir comida o salir a comer. 
+                <p className="texto-desc">{dep123.descripcion} 
                 </p>
             </div>
         </div>
@@ -95,9 +83,6 @@ El alojamiento es perfecto para una o dos personas. Tiene lugar para guardar có
             <div className="similDeptos"><BestApar/></div>
 
             </div>
-
-
-
 
         </div>);
     }

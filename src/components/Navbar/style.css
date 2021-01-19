@@ -1,0 +1,79 @@
+.navbar {
+  background-color: #333332 !important;
+  height: 10vh;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 5rem;
+  border-radius: 100%;
+}
+
+.navbar-nav {
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.link-nav {
+  padding-right: 5%;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9em;
+}
+
+#button-container {
+  width: 10%;
+}
+
+#btn_r {
+  color: #333332;
+  font-size: 1.5rem;
+  background-color: #fff;
+  height: 50%;
+  font-weight: bold;
+  font-family: 'Roboto';
+  float:right;
+}
+
+/* div.dropdown-menu {
+  background-color: #333332 !important;
+}
+div.dropdown-menu :hover {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.navbar .dropdown-menu a {
+  color: #fff !important;
+}
+
+.navbar-light button.navbar-toggler.collapsed span.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(175,177,182)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.navbar-light button.navbar-toggler span.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(175,177,182)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+} */
+
+@media screen and (max-width: 800px) {
+  nav.navbar {
+    padding-left: 4rem;
+    padding-right: 5rem;
+  }
+  .logo {
+    width: 5rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  nav.navbar {
+    padding-left: 10rem;
+    padding-right: 10rem;
+    height:8vh;
+  }
+}

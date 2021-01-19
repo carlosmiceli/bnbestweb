@@ -1,0 +1,14 @@
+.nombre-reviewer {
+  font-size: 1.6em;
+  font-family: 'Barlow';
+  text-align: center;
+}
+
+.texto-test {
+width: 85%;
+margin-left: auto;
+margin-right: auto;
+padding-right: 2em; padding-left: 2em;
+padding-top: 1.5em; padding-bottom: 3em;
+text-align: center;
+}

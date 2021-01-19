@@ -1,0 +1,56 @@
+.pasos-cont {
+    background: url("https://firebasestorage.googleapis.com/v0/b/best-at-3697b.appspot.com/o/fondos%2Fpizarra.jpg?alt=media&token=45f07316-4a32-4a9e-8cb6-e65353ddd68f");
+    padding-top: 4.5em; padding-bottom: 4.5em;
+    padding-left: 2em; padding-right: 2em;
+    color: white
+}
+
+.pasos-sec {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;    
+}
+
+.titulo_princ1, .titulo_princ2 {
+    text-align: center;
+}
+
+.titulo_princ1 {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 3em;
+    text-shadow: #000000 3px 3px 3px;
+}
+
+.titulo_princ2 {
+    font-family: 'gabelisaregular';
+    letter-spacing: 1px;
+    font-size: 2.5em;
+    padding-top: 0.2em;
+}
+
+.paso {
+    width:20rem;
+}
+
+.img-pasos {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    margin-top: 3em;
+}
+
+.titulo-pasos {
+    padding-top: 2.5em;
+    font-size: 1.1em;
+    font-weight: 600;
+    text-shadow: #000000 3px 3px 3px;
+}
+
+.texto-pasos {
+    margin-top: 20px;
+    font-size: 1em;
+    line-height: 1.5em;
+}
