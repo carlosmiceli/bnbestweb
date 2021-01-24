@@ -1,47 +1,42 @@
 import "../Departamentos/style.css";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
+import { firestore } from './../../firebase/utils'
+// import { connect } from 'react-redux'
+// import { setAllDeps } from './../../redux/Departamentos/departamentos.actions'
 import Card from "react-bootstrap/Card";
 import FontAwesome from "react-fontawesome";
-import firebase from "../../firebase.js";
-import {
-  Link
-}from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./style.css";
 
-function useAparments() {
-  const [apartments, setAparments] = useState([]);
+// const mapStateToProps = ({ dep }) => ({
+//   apartments: dep.allDeps
+// })
 
-  useEffect(() => {
-    firebase
-      .firestore()
-      .collection("bestap")
-      .onSnapshot(snapshot => {
-        const newAparments = snapshot.docs.map(doc => ({
-          id: doc.id,
-          ...doc.data()
-        }));
+// const mapDispatchToProps = dispatch => ({
+//   setAllDeps: deps => dispatch(setAllDeps(deps))
+// })
 
-        setAparments(newAparments);
-      });
-  }, []);
+const Departamentos = props => {
+  const [apartments, setApartments] = useState([]);
 
-  return apartments;
-}
-
-const Departamentos = () => {
-  const apartments = useAparments();
+  firestore
+    .collection("bestap")
+    .get()
+    .then(res => {
+      const tempDeps = []
+      res.forEach(dep => {
+        tempDeps.push(dep.data())
+      })
+      setApartments(tempDeps)
+    })
+    .catch(err => console.log(err))
 
   return (
     <div className='sec-dptos'>
       <div className='span-sec-dptos'></div>
-      <h2 className='titulo-sec-dptos'>
-        ELEGÍ TU BEST <br />
-        FAVORITO
-      </h2>
+      <h2 className='titulo-sec-dptos'>ELEGÍ TU BEST<br />FAVORITO </h2>
       <div className='span-sec-dptos'></div>
-
       <div className='section-df'>
-
         <div className='contenedor-dptos'>
           {apartments.map(bestap => (
             <Link to={`/departamentos/${bestap.id}`} key={bestap.id}>
@@ -56,15 +51,7 @@ const Departamentos = () => {
                       name='bed'
                       size='1x'
                       style={{ textShadow: "0 1px 0 rgba(0, 0, 0, 0.1)" }}
-                    />{" "}
-                    {bestap.camas} |{" "}
-                    <FontAwesome
-                      className='fas fa-bath'
-                      name='bath'
-                      size='1x'
-                      style={{ textShadow: "0 1px 0 rgba(0, 0, 0, 0.1)" }}
-                    />{" "}
-                    {bestap.banios} |
+                    />{" "}{bestap.personas}
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -73,7 +60,8 @@ const Departamentos = () => {
         </div>
       </div>
     </div>
-  );
+  )
 };
 
 export default Departamentos;
+// export default connect(mapStateToProps, mapDispatchToProps)(Departamentos);
