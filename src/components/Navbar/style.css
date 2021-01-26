@@ -1,4 +1,5 @@
 .navbar {
+  position: sticky;
   background-color: #333332 !important;
   height: 10vh;
   padding-left: 6rem;

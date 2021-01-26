@@ -23,7 +23,7 @@ class CollapsePage extends Component {
     return (
       <MDBContainer id='cont-faqs'>
         <MDBContainer id='cont-accordion' className='accordion md-accordion accordion-3 z-depth-1-half'>
-          <h1 class='text-center text-uppercase red-text py-4 px-3'>
+          <h1 className='text-center text-uppercase red-text py-4 px-3'>
             Preguntas Frecuentes
           </h1>
           <MDBCard className='faqQuestion'>
@@ -39,7 +39,7 @@ class CollapsePage extends Component {
               onClick={this.toggleCollapse("collapse1")}
             />
             <MDBCollapse id='collapse1' isOpen={this.state.collapseID}>
-              <MDBCardBody class='pt-0'>
+              <MDBCardBody className='pt-0'>
                 <p>
                   Anim pariatur cliche reprehenderit, enim eiusmod high life
                   accusamus terry richardson ad squid. 3 wolf moon officia aute,
@@ -70,7 +70,7 @@ class CollapsePage extends Component {
                 onClick={this.toggleCollapse("collapse2")}
               />
             <MDBCollapse id='collapse2' isOpen={this.state.collapseID}>
-              <MDBCardBody class='pt-0'>
+              <MDBCardBody className='pt-0'>
                 <p>
                   Anim pariatur cliche reprehenderit, enim eiusmod high life
                   accusamus terry richardson ad squid. 3 wolf moon officia aute,
@@ -101,7 +101,7 @@ class CollapsePage extends Component {
                 onClick={this.toggleCollapse("collapse3")}
               />
             <MDBCollapse id='collapse3' isOpen={this.state.collapseID}>
-              <MDBCardBody class='pt-0'>
+              <MDBCardBody className='pt-0'>
                 <p>
                   Anim pariatur cliche reprehenderit, enim eiusmod high life
                   accusamus terry richardson ad squid. 3 wolf moon officia aute,
@@ -132,7 +132,7 @@ class CollapsePage extends Component {
                 onClick={this.toggleCollapse("collapse4")}
               />
             <MDBCollapse id='collapse4' isOpen={this.state.collapseID}>
-              <MDBCardBody class='pt-0'>
+              <MDBCardBody className='pt-0'>
                 <p>
                   Anim pariatur cliche reprehenderit, enim eiusmod high life
                   accusamus terry richardson ad squid. 3 wolf moon officia aute,
@@ -163,7 +163,7 @@ class CollapsePage extends Component {
                 onClick={this.toggleCollapse("collapse5")}
               />
             <MDBCollapse id='collapse5' isOpen={this.state.collapseID}>
-              <MDBCardBody class='pt-0'>
+              <MDBCardBody className='pt-0'>
                 <p>
                   Anim pariatur cliche reprehenderit, enim eiusmod high life
                   accusamus terry richardson ad squid. 3 wolf moon officia aute,
@@ -194,7 +194,7 @@ class CollapsePage extends Component {
                 onClick={this.toggleCollapse("collapse6")}
               />
             <MDBCollapse id='collapse6' isOpen={this.state.collapseID}>
-              <MDBCardBody class='pt-0'>
+              <MDBCardBody className='pt-0'>
                 <p>
                   Anim pariatur cliche reprehenderit, enim eiusmod high life
                   accusamus terry richardson ad squid. 3 wolf moon officia aute,
@@ -225,7 +225,7 @@ class CollapsePage extends Component {
                 onClick={this.toggleCollapse("collapse7")}
               />
             <MDBCollapse id='collapse7' isOpen={this.state.collapseID}>
-              <MDBCardBody class='pt-0'>
+              <MDBCardBody className='pt-0'>
                 <p>
                   Anim pariatur cliche reprehenderit, enim eiusmod high life
                   accusamus terry richardson ad squid. 3 wolf moon officia aute,
@@ -256,7 +256,7 @@ class CollapsePage extends Component {
                 onClick={this.toggleCollapse("collapse8")}
               />
             <MDBCollapse id='collapse8' isOpen={this.state.collapseID}>
-              <MDBCardBody class='pt-0'>
+              <MDBCardBody className='pt-0'>
                 <p>
                   Anim pariatur cliche reprehenderit, enim eiusmod high life
                   accusamus terry richardson ad squid. 3 wolf moon officia aute,
@@ -287,7 +287,7 @@ class CollapsePage extends Component {
                 onClick={this.toggleCollapse("collapse9")}
               />
             <MDBCollapse id='collapse9' isOpen={this.state.collapseID}>
-              <MDBCardBody class='pt-0'>
+              <MDBCardBody className='pt-0'>
                 <p>
                   Anim pariatur cliche reprehenderit, enim eiusmod high life
                   accusamus terry richardson ad squid. 3 wolf moon officia aute,
@@ -318,7 +318,7 @@ class CollapsePage extends Component {
                 onClick={this.toggleCollapse("collapse10")}
               />
             <MDBCollapse id='collapse10' isOpen={this.state.collapseID}>
-              <MDBCardBody class='pt-0'>
+              <MDBCardBody className='pt-0'>
                 <p>
                   Anim pariatur cliche reprehenderit, enim eiusmod high life
                   accusamus terry richardson ad squid. 3 wolf moon officia aute,
@@ -349,7 +349,7 @@ class CollapsePage extends Component {
                 onClick={this.toggleCollapse("collapse11")}
               />
             <MDBCollapse id='collapse11' isOpen={this.state.collapseID}>
-              <MDBCardBody class='pt-0'>
+              <MDBCardBody className='pt-0'>
                 <p>
                   Anim pariatur cliche reprehenderit, enim eiusmod high life
                   accusamus terry richardson ad squid. 3 wolf moon officia aute,
@@ -380,7 +380,7 @@ class CollapsePage extends Component {
                 onClick={this.toggleCollapse("collapse12")}
               />
             <MDBCollapse id='collapse12' isOpen={this.state.collapseID}>
-              <MDBCardBody class='pt-0'>
+              <MDBCardBody className='pt-0'>
                 <p>
                   Anim pariatur cliche reprehenderit, enim eiusmod high life
                   accusamus terry richardson ad squid. 3 wolf moon officia aute,
@@ -411,7 +411,7 @@ class CollapsePage extends Component {
                 onClick={this.toggleCollapse("collapse13")}
               />
             <MDBCollapse id='collapse13' isOpen={this.state.collapseID}>
-              <MDBCardBody class='pt-0'>
+              <MDBCardBody className='pt-0'>
                 <p>
                   Anim pariatur cliche reprehenderit, enim eiusmod high life
                   accusamus terry richardson ad squid. 3 wolf moon officia aute,

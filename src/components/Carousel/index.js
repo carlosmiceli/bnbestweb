@@ -9,22 +9,15 @@ const Car = () => {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://firebasestorage.googleapis.com/v0/b/best-at-3697b.appspot.com/o/fotos%2F03.jpg?alt=media&token=201da1f7-e720-4209-bc3c-37fb44fb008d"
+          src="https://firebasestorage.googleapis.com/v0/b/best-at-3697b.appspot.com/o/banners%2Fbanners2.png?alt=media&token=035da031-1e39-4652-9ac8-2775abd44956"
           alt="First slide"
         />
       </Carousel.Item>
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://firebasestorage.googleapis.com/v0/b/best-at-3697b.appspot.com/o/fotos%2F02.jpg?alt=media&token=5ecb19ac-f8cb-4b74-935f-b4432caac3df"
+          src="https://firebasestorage.googleapis.com/v0/b/best-at-3697b.appspot.com/o/banners%2Fbanners3.png?alt=media&token=87504ed3-1b19-4d11-b202-c06bb7804e18"
           alt="Second slide"
-        />
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="https://firebasestorage.googleapis.com/v0/b/best-at-3697b.appspot.com/o/fotos%2F01.jpg?alt=media&token=c40f01f0-0dc3-46e6-8f89-9e085fb5a34d"
-          alt="Third slide"
         />
       </Carousel.Item>
     </Carousel>

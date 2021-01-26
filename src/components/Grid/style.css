@@ -1,0 +1,44 @@
+.grid {
+    width:100%;
+    display: flex;
+    cursor: pointer;
+}
+
+.cuadro {
+    max-height: 500px;
+    display: flex;
+}
+
+.img-cover {
+    height: 100%;
+    margin-right: 0.5em;
+}
+
+.grid-fotos {
+    display: grid;
+    grid-template-columns: 21em 10px;
+}
+
+.img-chica {
+    max-height: 250px;
+    padding: 3px 0;
+}
+
+.position-button {
+    position: relative;
+}
+
+.masfotos {
+    font-size:1.1em;
+    position:absolute;
+    bottom: 0;
+    width: 5em;
+    background-color: rgba(14, 12, 12, 0.5);
+    border-radius: 5px;
+    color: #fff;
+    border: none;
+    padding: 0.3em;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    text-transform: uppercase;
+}

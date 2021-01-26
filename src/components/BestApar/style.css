@@ -1,18 +1,18 @@
-.titulo{
-  font-size: 26px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-.contenedorP{
-    padding-left: 25px;
-    padding-right: 25px;
+.contenedorP {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 30px !important;
-
+    margin-top: 1em;
 }
-.card{
-  margin: 15px 20px !important;
-  cursor: pointer;
 
+.card {
+  width: 25%;
+  margin: 0 1em;
+  cursor: pointer;
+}
+
+.ver-mas {
+  width: 40%;
+  display: flex;
+  margin: auto auto;
+  padding-top: 45px;
 }

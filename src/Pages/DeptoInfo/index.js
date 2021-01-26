@@ -1,80 +1,97 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { firestore } from './../../firebase/utils'
-// import Mapa from '../../components/Map/index';
-// import Credentials from '../../Credentials';
+import Mapa from '../../components/Map/index';
 import BestApar from '../../components/BestApar';
-// import Grid from '../../components/Grid'
+import Grid from '../../components/Grid'
 import './style.css';
 
 const DeptoInfo = props => {
     const [depto, setDepto] = useState({});
+    const [apartments, setApartments] = useState([]);
 
-    console.log("0", props)
-  
-    firestore
-      .collection("bestap")
-      .doc("props.id")
-      .get()
-      .then(dep => {
-        const tempDepto = dep.data()
-        console.log("1", tempDepto)
-        setDepto(tempDepto)
-      })
-      .catch(err => console.log(err))
-  
-    // const mapURL = `https://maps.googleapis.com/maps/api/js?v=9.4.5.exp&key=${Credentials.mapsKey}`;
+    function getRandom(arr, n) {
+        var result = new Array(n),
+            len = arr.length,
+            taken = new Array(len);
+        if (n > len)
+            throw new RangeError("getRandom: more elements taken than available");
+        while (n--) {
+            var x = Math.floor(Math.random() * len);
+            result[n] = arr[x in taken ? taken[x] : x];
+            taken[x] = --len in taken ? taken[len] : len;
+        }
+        return result;
+    }
+
+
+    useEffect (() => {
+        firestore
+        .collection("bestap")
+        .doc(props.match.params.id)
+        .get()
+        .then(dep => {
+            const tempDepto = dep.data()
+            setDepto(tempDepto)
+        })
+        .catch(err => console.log(err))
+
+        firestore
+        .collection("bestap")
+        .get()
+        .then(res => {
+        const tempDeps = []
+        res.forEach(dep => {
+            tempDeps.push(dep.data())
+        })
+        setApartments(getRandom(tempDeps, 3))
+        })
+        .catch(err => console.log(err))
+    }, [props.match.params.id])
+
+    const mapKey = 'AIzaSyDD82qHCxgBXMX3vzMJRGkM71mNJi5ClG4'
+    const mapURL = `https://maps.googleapis.com/maps/api/js?v=9.4.5.exp&key=${mapKey}`
 
     return (
+        
         <div className='contenedor-depto'>        
-            {/* <Grid fotos={depto.fotos}/> */}
+            <Grid fotos={depto.fotos}/>
             <div className="nombre-depto">
-                <h3 className="nombre-depto-txt"> {depto.titulo}</h3>
+                <h3>{depto.titulo}</h3>
             </div>
             <hr/>
             <div className="seccion1">
-                <div className="descDeptos">
-                    <p className="texto-desc">{depto.descripcion}</p> 
-                </div>
+                <p className="texto-desc">{depto.descripcion}</p> 
             </div>
             <hr/>
             <div className="seccion2">
-                <div className="amenities">
-                    <div className="imagenes-amn">
-                        <div className="hola" id="personas"><p className="chau">{depto.personas}</p></div>
-                        <div className="hola" id="baño"><p className="chau">{depto.baño}</p></div>
-                        <div className="hola" id="balcon"><p className="chau">{depto.balcon}</p></div>
-                        <div className="hola" id="piso"><p className="chau">{depto.piso}</p></div>
-                        <div className="hola" id="ascensor"><p className="chau">{depto.ascensor}</p></div>   
-                    </div>
-                </div>  
+                <div className="hola" id="personas" style={{marginLeft: "20px"}}><p className="chau">{depto.personas}</p></div>
+                <div className="hola" id="wifi"><p className="chau">{depto.wifi}</p></div>
+                <div className="hola" id="balcon"><p className="chau">{depto.balcon}</p></div>
+                <div className="hola" id="piso"><p className="chau">{depto.piso}</p></div>
+                <div className="hola" id="ascensor"><p className="chau">{depto.ascensor}</p></div>
+                <div className="hola" id="pileta"><p className="chau">{depto.pileta}</p></div>
+                <div className="hola" id="ac"><p className="chau">{depto.ac}</p></div>
+                <div className="hola" id="pet"><p className="chau">{depto.pet}</p></div>    
             </div>
             <hr/>
             <div className="seccion3">
-                <div className="ubicDeptos">
-                    {/* <Mapa
-                        googleMapURL= {mapURL}
-                        containerElement={<div style={{height: '340px'}}/>}
-                        mapElement={<div style={{height: '100%'}}/>}
-                        loadingElement= {<p>Cargando</p>}
-                    /> */}
-                </div>
+                {depto.lat && depto.lng ?
+                <Mapa
+                    googleMapURL= {mapURL}
+                    lat={depto.lat}
+                    lng={depto.lng}
+                    containerElement={<div style={{height: '40vh'}}/>}
+                    mapElement={<div style={{height: '100%'}}/>}
+                    loadingElement= {<p>Cargando</p>}
+                />
+                : null }
             </div>
             <hr/>
-            <div className="seccion4">   
-                <div className="evaluaciones">
-                    <div>
-                        <img src="../../../img/iconos/fivestars.png" alt="" id="estrellas" />
-                    </div>
-                    <h5 className="ev-texto">"{depto.reviews[1].mensaje}"</h5>
-                    <h6>{depto.reviews[1].nombre}, {depto.reviews[1].ciudad}</h6>
-                </div>         
+            {apartments && 
+            <div className="seccion4">
+                <BestApar deptos={apartments}/>
             </div>
-            <hr/>
-            <div className="seccion5">
-                <div className="similDeptos">
-                    <BestApar/>
-                </div>
-            </div>
+            }
         </div>
     )
 }

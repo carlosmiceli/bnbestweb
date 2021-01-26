@@ -1,6 +1,7 @@
 import React from 'react'
 import './default.scss'
 import { Switch, Route } from 'react-router-dom'
+import SimpleReactLightbox from 'simple-react-lightbox'
 import NavB from './components/Navbar'
 import Homepage from './pages/Homepage'
 import Departamentos from './pages/Departamentos'
@@ -13,16 +14,18 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div className="App">
-      <NavB/>
-      <Switch>
-        <Route path="/departamentos" component={Departamentos}/>
-        <Route exact path="/departamentos/:id" render={(props) => <DeptoInfo {...props} />} />
-        <Route path="/faq" component={Faq}/>
-        <Route path="/blog" component={Blog}/>
-        <Route path="/" component={Homepage}/>
-      </Switch>
-      <Whatsapp/>
-      <Footer/>
+      <SimpleReactLightbox>
+        <NavB/>
+        <Switch>
+          <Route exact path="/departamentos/:id" render={(props) => <DeptoInfo {...props} />} />
+          <Route path="/departamentos" component={Departamentos}/>
+          <Route path="/faq" component={Faq}/>
+          <Route path="/blog" component={Blog}/>
+          <Route path="/" component={Homepage}/>
+        </Switch>
+        <Whatsapp/>
+        <Footer/>
+      </SimpleReactLightbox>
     </div>
   );
 }

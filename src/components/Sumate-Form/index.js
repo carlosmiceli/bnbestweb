@@ -47,7 +47,7 @@ const SumateForm = props => {
           </Form.Group>
           <Form.Group controlId='descripción-departamento'>
             <textarea
-              class='form-control'
+              className='form-control'
               type='text'
               placeholder='Danos una breve descripción de los espacios y
     amoblamientos de tu inmueble...'

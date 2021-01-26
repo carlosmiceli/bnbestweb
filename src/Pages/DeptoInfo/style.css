@@ -1,122 +1,76 @@
 .contenedor-depto{
-    margin: 130px 150px;
+    margin: 5em
 }
-.nombre-depto{
+
+.nombre-depto {
     margin-top: 30px;
     text-transform: uppercase; 
     font-size: 36px;
 }
 
-/* Sec1: Titulo y descripcion*/
-.seccion1{
+.seccion1 {
     display: flex;
-    flex-direction: row;
     margin: 30px 0px;
 }
 
-.descDeptos{
-    width: 100vw;
-    height: 100%;
-
-}
-.texto-desc{
-    width: 100%;
+.texto-desc {
     line-height: 180%;
 }
 
-/* Prueba de las fotos del grid*/
-
-#prueba{
-    width: 300px;
-    height: 300px;
-    cursor: pointer;
-    border-radius: 2% !important;
-}
-
-#prueba2{
-    display: none;
-}
-/*Seccion 2: servicios y precios*/
-
-.seccion2{
-    margin-left: -80px;
+.seccion2 {
     margin-bottom: 50px;
-    display: flex;
-    flex-direction: row;
-}
-
-.amenities{
-    width: 40vw;
-}
-.imagenes-amn{
     display: flex;
     flex-direction: column;
     flex-flow: wrap;
 }
-.chau{
-    padding-left: 55px;
+
+.hola {
+    width: 40px;
+    height: 40px;
+    margin-left: 65px;
+    margin-top: 35px;
+}
+
+.chau {
+    padding-left: 50px;
     padding-top: 12px;
     font-size: 18px;
     text-transform: uppercase;
 }
-.hola{
-    width: 40px;
-    height: 40px;
-    margin-left: 80px;
-    margin-top: 35px;
-}
+
+
 /*iconos servicios*/
-#personas{
+#personas {
     background: url(https://image.flaticon.com/icons/svg/478/478536.svg);
 }
-#baño{
+#pileta {
     background: url(https://image.flaticon.com/icons/svg/853/853788.svg);
 }
-#balcon{
+#balcon {
     background: url(https://image.flaticon.com/icons/svg/82/82490.svg);
 }
-#piso{
+#piso {
     background: url(https://image.flaticon.com/icons/svg/544/544917.svg);
 }
-#ascensor{
+#ascensor {
     background: url(https://image.flaticon.com/icons/svg/887/887331.svg);
 }
+#wifi {
+    background: url(https://www.flaticon.com/svg/vstatic/svg/297/297186.svg?token=exp=1611593651~hmac=78a796572ae09a9248396e8103816550);
+}
 
+#ac {
+    background: url(https://www.flaticon.com/svg/vstatic/svg/911/911511.svg?token=exp=1611593758~hmac=097181df73a966abc57d0c3257b53119);
+}
 
-/*Seccion 3: ubicacion*/
+#pet {
+    background: url(https://www.flaticon.com/svg/vstatic/svg/884/884183.svg?token=exp=1611593871~hmac=36f3e19b39a274666303de481051409d);
+}
 
-.seccion3{
+.seccion3 {
     margin: 50px 0px;
 }
-.ubicDeptos{
-    width: 100%;
-    height: 340px;
+
+.seccion4 {
+    margin-top: 30px !important;
 }
-/*Seccion 4: evaluaciones*/
-.evaluaciones{
-    width: 100%;
-    height: 340px;
-    padding-top: 50px;
-    margin-right: 15px;
-    text-align: center;
-    
-}
-.ev-texto{
-    width: 60%;
-    margin: auto;
-    padding-bottom: 20px;
-}
-#estrellas{
-    width: 100px;
-    height: 100px;
-    margin-bottom: 15px;
-}
-
-
-
-
-.similDeptos{
-    width: 100%;
-
-}
-
