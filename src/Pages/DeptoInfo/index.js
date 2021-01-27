@@ -89,7 +89,7 @@ const DeptoInfo = props => {
             <hr/>
             {apartments && 
             <div className="seccion4">
-                <BestApar deptos={apartments}/>
+                <BestApar deptos={apartments} showArrow={true}/>
             </div>
             }
         </div>

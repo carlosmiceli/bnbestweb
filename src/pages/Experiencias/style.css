@@ -1,0 +1,41 @@
+.catalogue {
+    margin-top: 2em;
+}
+
+.span-catalogue {
+    border-top: solid 5px #f8c217 ;
+    width: 15em;
+    margin: auto auto;
+    transform: rotate(-2deg);
+}
+
+.titulo-catalogue {
+    font-size: 1.7em;
+    text-align: center;
+    justify-content: space-between;
+    padding-bottom: 0.6em;
+    padding-top: 1em;
+}
+
+.cont-dptos {
+    display: flex;
+    padding: 0 3em;
+    margin-top: 5em;
+}
+
+.cont-dptos a {
+    padding: 0 1em;
+}
+
+.card {
+    color:#747373;
+}
+
+.card-title {
+    font-size: 1em !important;
+    font-weight: 400;
+}
+
+.card p {
+    font-size: 0.8em !important;
+}

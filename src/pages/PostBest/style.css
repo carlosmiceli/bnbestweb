@@ -1,0 +1,41 @@
+.post-main {
+    padding: 3em 8em;
+    display: flex;
+    flex-direction: column;
+}
+
+.post-foto {
+    width: 40%;
+    display: block;
+    margin: auto auto;
+}
+
+.post-titulo {
+    width: 40%;
+    display: block;
+    margin: auto auto;
+    padding: 1.5em;
+}
+
+.post-titulo h2 {
+    font-size: 2.2em;
+    font-weight:400;
+}
+
+.post-titulo a {
+    color: #212529;
+    text-decoration: underline;
+}
+
+.post-autor {
+    margin-top:1em;
+    font-size: 1em;
+}
+
+.post-contenido {
+    padding: 0 20em;
+}
+
+.post-parrafo {
+    padding: 0.3em;
+}

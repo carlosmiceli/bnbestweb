@@ -19,11 +19,13 @@ const BestApar = props => {
           </Card.Body>
         </Card>
       )}
+      {props.showArrow && 
       <Card style={{width: "15%"}}>
         <a href="/departamentos">
           <Card.Img className="ver-mas" src="https://firebasestorage.googleapis.com/v0/b/best-at-3697b.appspot.com/o/right-arrow.png?alt=media&token=8513e071-bf40-4a50-92ed-eba42b67576a" />
         </a>
       </Card>
+      }
     </div>
   );
 }

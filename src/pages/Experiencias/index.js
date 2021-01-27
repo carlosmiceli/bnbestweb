@@ -15,19 +15,19 @@ import "./style.css";
 //   setAllDeps: deps => dispatch(setAllDeps(deps))
 // })
 
-const Departamentos = () => {
-  const [apartments, setApartments] = useState([]);
+const Experiencias = () => {
+  const [experiences, setExperiences] = useState([]);
 
   useEffect (() => {
     firestore
-    .collection("bestap")
+    .collection("bestexp")
     .get()
     .then(res => {
-      const tempDeps = []
-      res.forEach(dep => {
-        tempDeps.push(dep.data())
+      const tempExps = []
+      res.forEach(exp => {
+        tempExps.push(exp.data())
       })
-      setApartments(tempDeps)
+      setExperiences(tempExps)
     })
     .catch(err => console.log(err))
   }, [])
@@ -35,22 +35,22 @@ const Departamentos = () => {
   return (
     <div className='catalogue'>
       <div className='span-catalogue'></div>
-      <h2 className='titulo-catalogue'>ELEGÍ TU BEST<br />FAVORITO </h2>
+      <h2 className='titulo-catalogue'>VIVE TU BEST<br />EXPERIENCIA </h2>
       <div className='span-catalogue'></div>
       <div className='cont-dptos'>
-        {apartments.map(bestap => (
-          <a href={`/departamentos/${bestap.id}`}>
-            <Card style={{ width: "14.5em" }} key={bestap.id}>
-              <Card.Img variant='top' src={bestap.fotos[0]}/>
+        {experiences.map(bestexp => (
+          <a href={`/experiencias/${bestexp.id}`}>
+            <Card style={{ width: "14.5em" }} key={bestexp.id}>
+              <Card.Img variant='top' src={bestexp.fotos[0]}/>
               <Card.Body>
-                <Card.Title>{bestap.titulo}</Card.Title>
+                <Card.Title>{bestexp.titulo}</Card.Title>
                 <Card.Text>
-                  Desde ${bestap.precio} por noche <br />
+                  Desde ${bestexp.precio} por persona <br />
                   <FontAwesome
                     className='fas fa-bed'
                     name='bed'
                     style={{ textShadow: "0 1px 0 rgba(0, 0, 0, 0.1)" }}
-                  />{" "}{bestap.personas}
+                  />{" "}{bestexp.duracion}
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -61,5 +61,5 @@ const Departamentos = () => {
   )
 };
 
-export default Departamentos;
+export default Experiencias;
 // export default connect(mapStateToProps, mapDispatchToProps)(Departamentos);

@@ -17,14 +17,14 @@
 
 .span-sumate {
     border-top: solid 5px #f8c217 ;
-    width: 10em;
+    width: 11em;
     margin: auto auto;
     transform: rotate(-2deg);
 }
 
 .titulo-suma {
     margin: auto;
-    padding-top: 0.5em;
+    padding-top: 0.6em;
     padding-bottom: 0.6em;
     font-size: 2em;
     font-weight: 200;

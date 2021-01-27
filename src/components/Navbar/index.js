@@ -39,6 +39,12 @@ const NavB = () => {
         </div>
         <NavLink
           className='link-nav'
+          to='/experiencias'
+        >
+          Experiencias
+        </NavLink>
+        <NavLink
+          className='link-nav'
           to='/faq'
         >
           Faq
