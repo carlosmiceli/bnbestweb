@@ -1,18 +1,17 @@
 # Best Alquileres - Temporary rental website
 
-Responsive website created with Node.js, React and Firestore.
+Responsive website created with Node.js, React and Firebase.
 ## Table of Contents
 
-* Introduction and description -DONE 
-* Status -DONE
-* Setup -DONE
-* Technologies -DONE
+* Description 
+* Status and TBDs
+* Setup
+* Technologies
+* Authors
+* Contact
 * Illustrations
-* Launch
-* Examples of use
-* Authors -DONE
 
-## Introduction and description
+## Description
 
 This is the first official website for [Best Alquileres](https://bestalquileres.com.ar/), a temporary rental company based in Argentina. The client wanted to have a website where 1) people could see temporary rental options, 2) where apartment owners could send their information, and 3) where the client could upload specific apartments and travel experiences.
 
@@ -22,7 +21,7 @@ The client also wanted to have the future option to turn the website into a full
 
 Due to the client's unexpected need to launch sooner than originally planned (deadline moved to January 31st, 2021), the current version has plenty of room for improvement while still delivering on all of the client's needs.
 
-What was accomplished from the client's requests:
+#### What was accomplished from the project scope
 * Responsive good-looking website.
 * Ability for apartment owners to send form applications to get published on the site.
 * Self-updating gallery of apartments and travel experiences.
@@ -30,7 +29,7 @@ What was accomplished from the client's requests:
 * Blog section for SEO purposes.
 * Cloud hosting and domain setup.
 
-What can be improved
+#### What can be improved
 * Grid images sizes and positions, due to uploaded images having no standard size.
 * Being able to trigger Lightbox from custom button.
 * Better styles and alert messages in form submissions.
@@ -43,8 +42,6 @@ $ cd ../bnbestweb
 $ npm install
 $ npm start
 ```
-
-## Illustrations
 
 ## Technologies
 
@@ -76,3 +73,13 @@ Florencia Galindo ([Github](https://github.com/florenciaisagalindo/)):
 ## Contact
 
 Feel free to email me (Carlos) at [me@carlosmiceli.com](me@carlosmiceli.com) for anything related to this project. 
+
+## Illustrations
+
+![Homepage](src/assets/images/screen-captures/Screen Shot 2021-02-01 at 1.22.08 PM.png?raw=true)
+![Form](src/assets/images/screen-captures/Screen Shot 2021-02-01 at 1.22.29 PM.png?raw=true)
+![Gallery](src/assets/images/screen-captures/Screen Shot 2021-02-01 at 1.23.13 PM.png?raw=true)
+![Apt-Info](src/assets/images/screen-captures/Screen Shot 2021-02-01 at 1.46.23 PM.png?raw=true)
+![Lightbox-gallery](src/assets/images/screen-captures/Screen Shot 2021-02-01 at 1.46.38 PM.png?raw=true)
+![Mobile-Info](src/assets/images/screen-captures/Screen Shot 2021-02-01 at 1.47.13 PM.png?raw=true)
+![Mobile-Home](src/assets/images/screen-captures/Screen Shot 2021-02-01 at 1.47.46 PM.png?raw=true)
