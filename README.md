@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# Best Alquileres - Temporary rental website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Responsive website created with Node.js, React and Firestore.
+## Table of Contents
 
-## Available Scripts
+* Introduction and description
+* Status
+* Setup -DONE
+* Technologies -DONE
+* Illustrations
+* Launch
+* Examples of use
+* Project status
+* Authors -DONE
 
-In the project directory, you can run:
+## Introduction and description
 
-### `npm start`
+This is the first official website for Best Alquileres, a temporary rental company based in Argentina. The client wanted to have a website where they could upload different apartments 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Status and TBDs
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Due to the client's unexpected need to launch sooner than originally planned (deadline moved to January 31st, 2021), the current version of the project fully delivers on all of the client's needs, but there's plenty of room for improvement down the road.
 
-### `npm test`
+- What works
+- What is not finished
+    * Grid images sizes and positions, due to uploaded images having no standard size.
+    * Being able to trigger Lightbox from custom button.
+- 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Setup
+To run this project, install it locally using npm:
 
-### `npm run build`
+```
+$ cd ../bnbestweb
+$ npm install
+$ npm start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Illustrations
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Homepage](./src/assets/images/screen-captures/Screen Shot 2021-02-01 at 1.22.08 PM.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Technologies
 
-### `npm run eject`
+Project is created with:
+* Javascript - 1.7 in Chrome
+* React - 17.0.1
+* Firebase - 8.2.3
+* Bootstrap - 4.5.3
+* Multiple libraries...
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Authors
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Carlos Miceli (Github, Linkedin, personal website):
+* Conditional rendering
+* State management
+* Database management and requests
+* Cloud-hosting setup
+* Responsiveness
+* Automations
+* Final design
+* Final style
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Florencia Galindo (Github):
+* Initial design
+* Initial style
+* Firestore setup
+* Google Maps and Lightbox libraries setup
