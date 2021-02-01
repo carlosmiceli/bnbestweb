@@ -76,7 +76,7 @@ Feel free to email me (Carlos) at [me@carlosmiceli.com](me@carlosmiceli.com) for
 
 ## Illustrations
 
-![Homepage](src/assets/images/screen-captures/Screen Shot 2021-02-01 at 1.22.08 PM.png?raw=true)
+![Homepage](https://raw.github.com/carlosmiceli/bnbestweb/main/src/assets/images/screen-captures/ScreenShot2021-02-01at1.22.08PM.png)
 ![Form](src/assets/images/screen-captures/Screen Shot 2021-02-01 at 1.22.29 PM.png?raw=true)
 ![Gallery](src/assets/images/screen-captures/Screen Shot 2021-02-01 at 1.23.13 PM.png?raw=true)
 ![Apt-Info](src/assets/images/screen-captures/Screen Shot 2021-02-01 at 1.46.23 PM.png?raw=true)
