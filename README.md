@@ -76,10 +76,17 @@ Feel free to email me (Carlos) at [me@carlosmiceli.com](me@carlosmiceli.com) for
 
 ## Illustrations
 
-![Homepage](https://raw.github.com/carlosmiceli/bnbestweb/main/src/assets/images/screen-captures/ScreenShot2021-02-01at1.22.08PM.png)\
-![Form](https://raw.github.com/carlosmiceli/bnbestweb/main/src/assets/images/screen-captures/ScreenShot2021-02-01at1.22.29PM.png?raw=true)\
-![Gallery](https://raw.github.com/carlosmiceli/bnbestweb/main/src/assets/images/screen-captures/ScreenShot2021-02-01at1.23.13PM.png?raw=true)\
-![Apt-Info](https://raw.github.com/carlosmiceli/bnbestweb/main/src/assets/images/screen-captures/ScreenShot2021-02-01at1.46.23PM.png?raw=true)\
-![Lightbox-gallery](https://raw.github.com/carlosmiceli/bnbestweb/main/src/assets/images/screen-captures/ScreenShot2021-02-01at1.46.38PM.png?raw=true)\
-![Mobile-Info](https://raw.github.com/carlosmiceli/bnbestweb/main/src/assets/images/screen-captures/ScreenShot2021-02-01at1.47.13PM.png?raw=true)\
-![Mobile-Home](https://raw.github.com/carlosmiceli/bnbestweb/main/src/assets/images/screen-captures/ScreenShot2021-02-01at1.47.46PM.png?raw=true)\
+![Homepage](https://raw.github.com/carlosmiceli/bnbestweb/main/src/assets/images/screen-captures/ScreenShot2021-02-01at1.22.08PM.png)
+\\
+![Form](https://raw.github.com/carlosmiceli/bnbestweb/main/src/assets/images/screen-captures/ScreenShot2021-02-01at1.22.29PM.png?raw=true)
+\\
+![Gallery](https://raw.github.com/carlosmiceli/bnbestweb/main/src/assets/images/screen-captures/ScreenShot2021-02-01at1.23.13PM.png?raw=true)
+\\
+![Apt-Info](https://raw.github.com/carlosmiceli/bnbestweb/main/src/assets/images/screen-captures/ScreenShot2021-02-01at1.46.23PM.png?raw=true)
+\\
+![Lightbox-gallery](https://raw.github.com/carlosmiceli/bnbestweb/main/src/assets/images/screen-captures/ScreenShot2021-02-01at1.46.38PM.png?raw=true)
+\\
+![Mobile-Info](https://raw.github.com/carlosmiceli/bnbestweb/main/src/assets/images/screen-captures/ScreenShot2021-02-01at1.47.13PM.png?raw=true)
+\\
+![Mobile-Home](https://raw.github.com/carlosmiceli/bnbestweb/main/src/assets/images/screen-captures/ScreenShot2021-02-01at1.47.46PM.png?raw=true)
+\\
