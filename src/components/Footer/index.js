@@ -31,7 +31,7 @@ const Footer = () => {
           </MDBContainer>
           <MDBContainer fluid className="copyright">
             &copy; {new Date().getFullYear()} Copyright - Best Alquiler Temporario
-            <p className="desarrollo"> Built by <a href="https://github.com/carlosmiceli">Charly</a> and <a href="https://github.com/florenciaisagalindo/">Flor</a>.</p>
+            <p className="desarrollo"> Built by <a href="https://github.com/carlosmiceli" target="_blank" rel="noopener noreferrer">Charly</a> and <a href="https://github.com/florenciaisagalindo/" target="_blank" rel="noopener noreferrer">Flor</a>.</p>
           </MDBContainer>
         </div>
       </MDBFooter>

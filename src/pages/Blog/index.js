@@ -42,12 +42,12 @@ console.log("1", posts)
   return (
     <div className='cont-blog'>
       <h1 className="page-title">Blog de Best</h1>
-      <MDBCard className='my-5 px-5 pb-5'>
+      <MDBCard>
         <MDBCardBody>
         {posts && posts.map(bestpost => (
           <MDBRow>
-            <MDBCol lg='5' xl='4'>
-              <MDBView hover className='rounded z-depth-1-half mb-lg-0 mb-4'>
+            <MDBCol>
+              <MDBView hover className='rounded z-depth-1-half'>
                 <img
                   className='img-fluid'
                   src={bestpost.foto}
@@ -59,21 +59,22 @@ console.log("1", posts)
               </MDBView>
             </MDBCol>
             <MDBCol lg='7' xl='8'>
-              <h3 className='mb-3 p-0'>{bestpost.titulo}</h3>
-              <div className='dark-grey-text'>
-                {bestpost.contenido[0].slice(0,200)}...
-              </div>
-              <p>
-                Escrito por <a href='#!'>María Betsabé Juarez Ypa</a>, {bestpost.fecha}
+              <h3>{bestpost.titulo}</h3>
+              {bestpost.intro.slice(0,200)}...
+              <p className="info-autor">
+                Escrito por <a href='#!'>{bestpost.autor}</a>, {bestpost.fecha}
               </p>
-              <MDBBtn color='primary' size='md'>
-                Leer más...
-              </MDBBtn>
+              <a href={`/blog/${bestpost.id}`}>
+                <MDBBtn color='primary'>
+                  Leer más...
+                </MDBBtn>
+                <MDBMask overlay='white-slight' />
+              </a>
             </MDBCol>
           </MDBRow>
-           ))}
-        </MDBCardBody>
-      </MDBCard>
+        ))}
+      </MDBCardBody>
+    </MDBCard>
     </div>
   );
 };

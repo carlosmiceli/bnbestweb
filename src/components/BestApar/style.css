@@ -1,7 +1,8 @@
-.contenedorP {
-    display: flex;
-    justify-content: center;
+@media only screen and (max-width: 425px) {
+  .contenedorP {
+    padding: 0 1em;
     margin-top: 1em;
+    text-align: left;
 }
 
 .card {
@@ -10,9 +11,122 @@
   cursor: pointer;
 }
 
+.card-text {
+  display: flex;
+}
+
+.fa-bed {
+  margin-left: 1.5em;
+  margin-right: 0.3em;
+}
+
 .ver-mas {
   width: 40%;
-  display: flex;
+  display: none !important;
   margin: auto auto;
   padding-top: 45px;
 }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 767px) {
+  .contenedorP {
+    padding: 0 1em;
+    margin-top: 1em;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+  width: 80%;
+  margin: 1em 1em;
+  cursor: pointer;
+}
+
+.card-text {
+  display: flex;
+}
+
+.fa-bed {
+  margin-left: 1.5em;
+  margin-right: 0.3em;
+}
+
+.ver-mas {
+  width: 40%;
+  display: none !important;
+  margin: auto auto;
+  padding-top: 45px;
+}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  .contenedorP {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    text-align: left;
+}
+
+.card {
+  width: 30%;
+  margin: 0 1em !important;
+  cursor: pointer;
+}
+
+  .ver-mas {
+    width: 15% !important;
+    display: flex;
+    margin: auto auto;
+    padding-top: 50px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .contenedorP {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    text-align: left;
+}
+
+.card {
+  width: 30%;
+  margin: 0 1em !important;
+  cursor: pointer;
+}
+
+.ver-mas {
+  width: 15% !important;
+  display: flex;
+  margin: auto auto;
+  padding-top: 80px;
+}
+}
+
+@media only screen and (min-width: 1440px) {
+  .contenedorP {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    text-align: left;
+}
+
+.card {
+  width: 30%;
+  margin: 0 1em !important;
+  cursor: pointer;
+}
+
+.ver-mas {
+  width: 15% !important;
+  display: flex;
+  margin: auto auto;
+  padding-top: 100px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+}
+
+

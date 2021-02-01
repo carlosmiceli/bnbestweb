@@ -1,14 +1,95 @@
-.nombre-reviewer {
-  font-size: 1.6em;
-  font-family: 'Barlow';
-  text-align: center;
+@media only screen and (min-width: 300px) and (max-width: 424px) {
+  .home-reviews {
+    min-height: 20em;
+    text-align: center;
+  }
+  
+  .texto-test {
+    margin-top: 2em;
+    margin-bottom: 1em;
+    font-size: 1.3em;
+  }
+
+  .nombre-reviewer {
+    padding-bottom: 2em;
+  }
+
+  .carousel-control-prev {
+    display: none;
+  }
+
+  .carousel-control-next {
+    display: none;
+  }
 }
 
-.texto-test {
-width: 85%;
-margin-left: auto;
-margin-right: auto;
-padding-right: 2em; padding-left: 2em;
-padding-top: 1.5em; padding-bottom: 3em;
-text-align: center;
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  .home-reviews {
+    min-height: 35vh;
+    text-align: center;
+  }
+  
+  .texto-test {
+    margin-top: 2em;
+    margin-bottom: 1em;
+    font-size: 1.3em;
+  } 
+
+  .nombre-reviewer {
+    padding-bottom: 5em;
+  }
+
+  .carousel-control-prev {
+    display: none;
+  }
+
+  .carousel-control-next {
+    display: none;
+  }
 }
+
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  .home-reviews {
+    min-height: 40vh;
+    text-align: center;
+  }
+  
+  .texto-test {
+    font-size: 1.3em;
+    width: 85%;
+    margin: auto;
+    padding: 1em;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .home-reviews {
+    min-height: 40vh;
+    text-align: center;
+  }
+  
+  .texto-test {
+    font-size: 1.2em;
+    width: 85%;
+    margin: auto;
+    padding: 1em;
+  }
+
+  .nombre-reviewer {
+    font-size: 0.9em;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .home-reviews {
+    min-height: 12.5em;
+    text-align: center;
+  }
+  
+  .texto-test {
+    width: 85%;
+    margin: auto;
+    padding: 1em 2em;
+  }
+}
+

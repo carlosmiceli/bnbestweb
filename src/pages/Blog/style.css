@@ -1,34 +1,212 @@
-.cont-blog{
-    margin-top: 3em;
-    padding: 0 2em;
+@media only screen and (max-width: 425px) {
+    .cont-blog {
+        padding: 0 1em;
+    }
+    
+    .cont-blog h1 {
+        margin-top: 1em;
+    }
+    
+    .page-title {
+        font-size: 2.5em;
+        font-weight: 300;
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1em;
+    }
+    
+    .card {
+        display: block;
+        margin: auto;
+        width: 90%;
+        border: none !important;
+        box-shadow: none !important;
+    }
+    
+    .row {
+        margin-bottom: 2em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+        margin: 0.5em 0;
+    }
+    
+    .info-autor {
+        padding-top: 1em;
+    }
+    
+    .cont-blog a {
+        color: #007bff;
+        font-weight: 400;
+    }
+    
+    .cont-blog .btn-primary {
+        font-size: 0.7em;
+        font-weight: 400;
+        padding: 0.5em 1.2em;
+        margin: 0 !important;
+    }
 }
 
-.page-title {
-    font-size: 2.5em;
-    font-weight: 300;
-    text-align: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 1em;
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+    .cont-blog {
+        padding: 0 2em;
+    }
+    
+    .cont-blog h1 {
+        margin-top: 1.5em;
+    }
+    
+    .page-title {
+        font-size: 2.5em;
+        font-weight: 300;
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1em;
+    }
+    
+    .card {
+        display: block;
+        margin: 4em 4em;
+        width: 90%;
+        border: none !important;
+        box-shadow: none !important;
+    }
+    
+    .row {
+        margin-bottom: 3em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+        margin-bottom: 0.5em;
+    }
+    
+    .info-autor {
+        padding-top: 1em;
+    }
+    
+    .cont-blog a {
+        color: #007bff;
+        font-weight: 400;
+    }
+    
+    .cont-blog .btn-primary {
+        font-size: 0.7em;
+        font-weight: 400;
+        padding: 0.5em 1.2em;
+        margin: 0 !important;
+    }
 }
 
-.card {
-    border: none !important;
-    box-shadow: none !important;
+@media only screen and (min-width: 1280px) {
+    .cont-blog {
+        padding: 0 2em;
+    }
+    
+    .cont-blog h1 {
+        margin-top: 1.5em;
+    }
+    
+    .page-title {
+        font-size: 2.5em;
+        font-weight: 300;
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1em;
+    }
+    
+    .card {
+        display: block;
+        margin: auto;
+        width: 90%;
+        border: none !important;
+        box-shadow: none !important;
+    }
+    
+    .row {
+        margin-bottom: 3em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+        margin-bottom: 0.5em;
+    }
+    
+    .info-autor {
+        padding-top: 1em;
+    }
+    
+    .cont-blog a {
+        color: #007bff;
+        font-weight: 400;
+    }
+    
+    .cont-blog .btn-primary {
+        font-size: 0.7em;
+        font-weight: 400;
+        padding: 0.5em 1.2em;
+        margin: 0 !important;
+    }
 }
 
-h3 {
-    font-size: 1.3em;
+@media only screen and (min-width: 1440px) {
+    .cont-blog {
+        padding: 0 2em;
+    }
+    
+    .cont-blog h1 {
+        margin-top: 1.5em;
+    }
+    
+    .page-title {
+        font-size: 2.5em;
+        font-weight: 300;
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1em;
+    }
+    
+    .card {
+        display: block;
+        margin: auto;
+        width: 90%;
+        border: none !important;
+        box-shadow: none !important;
+    }
+    
+    .row {
+        margin-bottom: 4em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+        margin-bottom: 0.5em;
+    }
+    
+    .info-autor {
+        padding-top: 1em;
+    }
+    
+    .cont-blog a {
+        color: #007bff;
+        font-weight: 400;
+    }
+    
+    .cont-blog .btn-primary {
+        font-size: 0.7em;
+        font-weight: 400;
+        padding: 0.5em 1.2em;
+        margin: 0 !important;
+    }
 }
 
-.cont-blog a {
-    color: #007bff;
-    font-weight: 400;
-}
-
-.cont-blog .btn-primary {
-    font-size: 0.7em;
-    font-weight: 400;
-    padding: 0.5em 1.2em;
-}

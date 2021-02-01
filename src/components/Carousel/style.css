@@ -1,8 +1,34 @@
-.w-100 {
-    height: 70vh;
+@media only screen and (max-width: 765px) {
+    .content-desktop {display: none;}
+    .content-mobile {display: block;} 
+
+    .w-100 {
+        height: 30vh;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+    .content-desktop {display: block;}
+    .content-mobile {display: none;} 
+
+    .w-100 {
+        height: 50vh;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .content-desktop {display: block;}
+    .content-mobile {display: none;} 
+
+    .w-100 {
+        height: 75vh;
+    }
 }
 
 @media screen and (min-width: 1440px) {
+    .content-desktop {display: block;}
+    .content-mobile {display: none;} 
+
     .w-100 {
         height: 60vh;
     }

@@ -4,7 +4,8 @@ import { firestore } from './../../firebase/utils'
 // import { connect } from 'react-redux'
 // import { setAllDeps } from './../../redux/Departamentos/departamentos.actions'
 import Card from "react-bootstrap/Card";
-import FontAwesome from "react-fontawesome";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBed } from '@fortawesome/free-solid-svg-icons'
 import "./style.css";
 
 // const mapStateToProps = ({ dep }) => ({
@@ -40,17 +41,13 @@ const Departamentos = () => {
       <div className='cont-dptos'>
         {apartments.map(bestap => (
           <a href={`/departamentos/${bestap.id}`}>
-            <Card style={{ width: "14.5em" }} key={bestap.id}>
+            <Card key={bestap.id}>
               <Card.Img variant='top' src={bestap.fotos[0]}/>
               <Card.Body>
                 <Card.Title>{bestap.titulo}</Card.Title>
                 <Card.Text>
                   Desde ${bestap.precio} por noche <br />
-                  <FontAwesome
-                    className='fas fa-bed'
-                    name='bed'
-                    style={{ textShadow: "0 1px 0 rgba(0, 0, 0, 0.1)" }}
-                  />{" "}{bestap.personas}
+                  <FontAwesomeIcon icon={faBed} />{" "}{bestap.personas}
                 </Card.Text>
               </Card.Body>
             </Card>

@@ -22,7 +22,7 @@ const ExpInfo = props => {
 
     return (
         <div className='contenedor-depto'>        
-            {fotos && <Grid fotos={experience.fotos}/> }
+            {fotos && <Grid fotos={experience.fotos} cat="Exp"/> }
             <div className="nombre-depto">
                 <h3>{experience.titulo}</h3>
             </div>
@@ -31,13 +31,13 @@ const ExpInfo = props => {
                 <p className="texto-desc">{experience.descripcion}</p> 
             </div>
             <hr/>
-            <div className="seccion2">
-                <div className="hola" id="duracion" style={{marginLeft: "20px"}}><p className="chau">{experience.duracion}</p></div>
-                <div className="hola" id="incluye"><p className="chau">{experience.incluye}</p></div>
-                <div className="hola" id="traer"><p className="chau">{experience.traer}</p></div>
+            <div className="seccion2-exp">
+                <div className="hola-exp" id="duracion"><p className="chau-exp">{experience.duracion}</p></div>
+                <div className="hola-exp" id="incluye"><p className="chau-exp">{experience.incluye}</p></div>
+                <div className="hola-exp" id="traer"><p className="chau-exp">{experience.traer}</p></div>
             </div>
             <hr/>
-            <button className="button-reservar"><a href='https://api.whatsapp.com/send?phone=54381040583' target="_blank" rel="noreferrer">Reservar mi cupo</a></button>
+            <button className="button-reservar"><a href='https://api.whatsapp.com/send?phone=+5493813040583' target="_blank" rel="noreferrer">Reservar mi cupo</a></button>
         </div>
     )
 }

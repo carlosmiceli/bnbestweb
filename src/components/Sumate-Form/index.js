@@ -1,8 +1,19 @@
 import React from "react";
-import { Modal, Form, Button } from "react-bootstrap";
+import { firestore } from '../../firebase/utils'
+import { Modal } from "react-bootstrap";
+import { useForm } from 'react-hook-form'
 import "./style.css";
 
 const SumateForm = props => {
+  const { register, errors, handleSubmit } = useForm();
+  
+  const newFormDep = dep => {
+    firestore.collection("bestformdep").add({
+      ...dep,
+      createdAt: new Date()
+    })
+    alert("¡Muchas gracias! Nos pondremos en contacto contigo a la brevedad :-)");
+  };
 
   return (
     <Modal show={props.show} onHide={props.onHide}>
@@ -10,80 +21,56 @@ const SumateForm = props => {
         <Modal.Title>Dejanos tus datos y te contactamos</Modal.Title>
       </Modal.Header>
       <div className='sumate-formulario'>
-        <Form >
-          <Form.Group controlId='direccion'>
-            <Form.Control
-              type='text'
-              placeholder='Dirección del inmueble'
-            />
-          </Form.Group>
-          <Form.Group controlId='barrio'>
-            <Form.Control type='text' placeholder='Barrio' />
-          </Form.Group>
-          <Form.Group controlId='provincia'>
-            <Form.Control type='text' placeholder='Provincia' />
-          </Form.Group>
-          <Form.Group controlId='plataformas-select'>
-            <Form.Label>Plataformas en las que está publicada:</Form.Label>
-            <Form.Control
-              type='text'
-              placeholder='Ej.: Airbnb, Booking, etc.'
-            />
-          </Form.Group>
-          <Form.Group controlId='fotos-profesionales'>
-            <Form.Label>¿Tenés fotos profesionales?</Form.Label>
-            <Form.Check
-              label='Sí'
-              type='radio'
-              name='fotos'
-              id='fotos-afirmativo'
-            />
-            <Form.Check
-              label='No'
-              type='radio'
-              name='fotos'
-              id='fotos-negativo'
-            />
-          </Form.Group>
-          <Form.Group controlId='descripción-departamento'>
-            <textarea
-              className='form-control'
-              type='text'
-              placeholder='Danos una breve descripción de los espacios y
-    amoblamientos de tu inmueble...'
-              rows='5'
-            ></textarea>
-          </Form.Group>
-          <Form.Group controlId='antecedentes'>
-            <Form.Label>
-              ¿Recibiste huéspedes anteriormente o sos nuevo en esto?
-            </Form.Label>
-            <Form.Check
-              label='Sí'
-              type='radio'
-              name='huespedes'
-              id='antecedentes-afirmativo'
-            />
-            <Form.Check
-              label='No'
-              type='radio'
-              name='huespedes'
-              id='antecedentes-negativo'
-            />
-          </Form.Group>
-          <Form.Group controlId='email'>
-            <Form.Control type='email' placeholder='Email' />
-          </Form.Group>
-          <Form.Group controlId='telefono'>
-            <Form.Control type='text' placeholder='Teléfono de contacto' />
-          </Form.Group>
-        </Form>
+        <form onSubmit={handleSubmit(newFormDep)}>
+          <div className="form-group">
+            <label className="control-label">Dirección del inmueble</label>
+            <input className="form-control" name="direccion" ref={register({required: true})} placeholder="Ej.: XXXXX" />
+          </div>
+          <div className="form-group">
+            <label className="control-label">Barrio</label>
+            <input className="form-control" name="barrio" ref={register({required: true})} placeholder="Ej.: ZZZZZ" />
+          </div>
+          <div className="form-group">
+            <label className="control-label">Provincia</label>
+            <input className="form-control" name="provincia" ref={register({required: true})} placeholder="Ej.: YYYYY" />
+          </div>
+          <div className="form-group">
+            <label>Plataformas en las que está publicado:</label>
+            <input className="form-control" name="plataformas" ref={register} placeholder="Ej.: Airbnb, Booking, etc." />
+          </div>
+          <div className="form-group">
+            <label>¿Tenés fotos profesionales?</label>
+            <select className="form-control" name="fotos-pro" ref={register}>
+              <option type="radio" value="si" >Si</option>
+              <option type="radio" value="no" >No</option>
+              <option type="radio" value="no" >No, pero me gustaría</option>
+            </select>
+          </div>
+          <div className="form-group">
+            <label>Descripción:</label>
+            <textarea rows="3" className="form-control" name="descripcion" ref={register} placeholder="Danos una breve descripción de los espacios y
+      amoblamientos de tu inmueble..."/>
+          </div>
+          <div className="form-group">
+            <label>¿Recibiste huéspedes anteriormente?</label>
+            <select className="form-control" name="antecedentes" ref={register({required: true})}>
+              <option type="radio" value="si" >Si</option>
+              <option type="radio" value="no" >No</option>
+            </select>
+          </div>
+          <div className="form-group">
+            <label className="control-label">Email</label>
+            <input className="form-control" name="email" ref={register({required: true, pattern: /^\S+@\S+$/i})} placeholder="Email" />
+          </div>
+          <div className="form-group">
+            <label className="control-label">Teléfono</label>
+            <input className="form-control" name="telefono" ref={register({required: true, minLength: 6, maxLength: 14})} placeholder="Teléfono" />
+          </div>
+          <button id="submit-btn" type="submit"
+          onClick={props.onHide}>Enviar</button>
+          {(errors.direccion || errors.barrio || errors.provincia || errors.email || errors.telefono) ? alert("Campos incompletos.") : null}
+        </form>
       </div>
-      <Modal.Footer>
-        <Button id="submit-btn" onClick={props.onClick}>
-          Enviar
-        </Button>
-      </Modal.Footer>
     </Modal>
   );
 };

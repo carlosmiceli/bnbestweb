@@ -5,7 +5,30 @@ import './style.css';
 const Car = () => {
   return (
   <div>
-    <Carousel className="w-100">
+    <Carousel className="w-100 content-mobile">
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src="https://firebasestorage.googleapis.com/v0/b/best-at-3697b.appspot.com/o/banners%2Fx%20(1).png?alt=media&token=ba9103ed-101b-4e08-b430-8035fe35ee6b"
+          alt="First slide"
+        />
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src="https://firebasestorage.googleapis.com/v0/b/best-at-3697b.appspot.com/o/banners%2Fx%20(2).png?alt=media&token=e05a028e-e366-452f-a99c-08b4ba31bcbf"
+          alt="Second slide"
+        />
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src="https://firebasestorage.googleapis.com/v0/b/best-at-3697b.appspot.com/o/banners%2Fx%20(3).png?alt=media&token=b6dcded8-9c51-4a75-a050-f1eeee8ce11d"
+          alt="Second slide"
+        />
+      </Carousel.Item>
+    </Carousel>
+    <Carousel className="w-100 content-desktop">
       <Carousel.Item>
         <img
           className="d-block w-100"

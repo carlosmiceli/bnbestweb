@@ -54,7 +54,7 @@ const DeptoInfo = props => {
     return (
         
         <div className='contenedor-depto'>        
-            <Grid fotos={depto.fotos}/>
+            <Grid fotos={depto.fotos} cat="Dep"/>
             <div className="nombre-depto">
                 <h3>{depto.titulo}</h3>
             </div>
@@ -64,14 +64,38 @@ const DeptoInfo = props => {
             </div>
             <hr/>
             <div className="seccion2">
-                <div className="hola" id="personas" style={{marginLeft: "20px"}}><p className="chau">{depto.personas}</p></div>
-                <div className="hola" id="wifi"><p className="chau">{depto.wifi}</p></div>
-                <div className="hola" id="balcon"><p className="chau">{depto.balcon}</p></div>
-                <div className="hola" id="piso"><p className="chau">{depto.piso}</p></div>
-                <div className="hola" id="ascensor"><p className="chau">{depto.ascensor}</p></div>
-                <div className="hola" id="pileta"><p className="chau">{depto.pileta}</p></div>
-                <div className="hola" id="ac"><p className="chau">{depto.ac}</p></div>
-                <div className="hola" id="pet"><p className="chau">{depto.pet}</p></div>    
+                <div className="iconos-depto">
+                    <img alt="" className="icono-imagen" src="https://firebasestorage.googleapis.com/v0/b/best-at-3697b.appspot.com/o/iconos%2Fpersonas.svg?alt=media&token=ebb040e6-4551-4a0f-bceb-9edcdbe6fa83" />
+                    <p>{depto.personas}</p>
+                </div>
+                <div className="iconos-depto">
+                    <img alt="" className="icono-imagen" src="https://firebasestorage.googleapis.com/v0/b/best-at-3697b.appspot.com/o/iconos%2Fwifi-signal.svg?alt=media&token=084dc922-2acc-428e-adb2-96a2381cb948" />
+                    <p>{depto.wifi}</p>
+                </div>
+                <div className="iconos-depto">
+                    <img alt="" className="icono-imagen" src="https://firebasestorage.googleapis.com/v0/b/best-at-3697b.appspot.com/o/iconos%2Fbalcon.svg?alt=media&token=dc2f8b9f-4de9-4f6e-9a01-aeda596d92e5" />
+                    <p>{depto.balcon}</p>
+                </div>
+                <div className="iconos-depto">
+                    <img alt="" className="icono-imagen" src="https://firebasestorage.googleapis.com/v0/b/best-at-3697b.appspot.com/o/iconos%2Fpiso.svg?alt=media&token=8db49145-7ca9-443a-b1c4-f25d4d1d8c9c" />
+                    <p>{depto.piso}</p>
+                </div>
+                <div className="iconos-depto">
+                    <img alt="" className="icono-imagen" src="https://firebasestorage.googleapis.com/v0/b/best-at-3697b.appspot.com/o/iconos%2Fascensor.svg?alt=media&token=16677bcf-2fdb-4b7f-a09e-976139bb5dcd" />
+                    <p>{depto.ascensor}</p>
+                </div>
+                <div className="iconos-depto">
+                    <img alt="" className="icono-imagen" src="https://firebasestorage.googleapis.com/v0/b/best-at-3697b.appspot.com/o/iconos%2Fpileta.svg?alt=media&token=d70d761b-4e6e-41a6-a751-7710264ca665" />
+                    <p>{depto.pileta}</p>
+                </div>
+                <div className="iconos-depto">
+                    <img alt="" className="icono-imagen" src="https://firebasestorage.googleapis.com/v0/b/best-at-3697b.appspot.com/o/iconos%2Fac.svg?alt=media&token=80b88d49-1a5b-4d06-9aec-f7de524568dd" />
+                    <p>{depto.ac}</p>
+                </div>
+                <div className="iconos-depto">
+                    <img alt="" className="icono-imagen" src="https://firebasestorage.googleapis.com/v0/b/best-at-3697b.appspot.com/o/iconos%2Fpet.svg?alt=media&token=adb97494-beaf-4d3f-906b-c52e87f139e0" />
+                    <p>{depto.pet}</p>
+                </div>
             </div>
             <hr/>
             <div className="seccion3">

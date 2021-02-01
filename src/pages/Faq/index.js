@@ -40,23 +40,11 @@ class CollapsePage extends Component {
             />
             <MDBCollapse id='collapse1' isOpen={this.state.collapseID}>
               <MDBCardBody className='pt-0'>
-                <p>
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life
-                  accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                  non cupidatat skateboard dolor brunch. Food truck quinoa
-                  nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
-                  aliqua put a bird on it squid single-origin coffee nulla
-                  assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-                  beer labore wes anderson cred nesciunt sapiente ea proident.
-                  Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-                  beer farm-to-table, raw denim aesthetic synth nesciunt you
-                  probably haven't heard of them accusamus labore sustainable
-                  VHS.
-                </p>
+                <p>El ingreso es a partir de las 13hs en adelante. La salida es a las 11 am.</p>
               </MDBCardBody>
             </MDBCollapse>
           </MDBCard>
-          
+
           <MDBCard className='faqQuestion'>
               <h2>¿Cómo hago para reservar?</h2>
               <MDBIcon
@@ -71,19 +59,20 @@ class CollapsePage extends Component {
               />
             <MDBCollapse id='collapse2' isOpen={this.state.collapseID}>
               <MDBCardBody className='pt-0'>
-                <p>
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life
-                  accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                  non cupidatat skateboard dolor brunch. Food truck quinoa
-                  nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
-                  aliqua put a bird on it squid single-origin coffee nulla
-                  assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-                  beer labore wes anderson cred nesciunt sapiente ea proident.
-                  Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-                  beer farm-to-table, raw denim aesthetic synth nesciunt you
-                  probably haven't heard of them accusamus labore sustainable
-                  VHS.
-                </p>
+              <h4>1- ENVIÁNOS WHATSAPP</h4>
+                <ul>
+                  <li>Fecha</li> 
+                  <li>Cantidad de huéspedes</li>
+                  <li>Departamento favorito</li>
+                </ul>
+                <h4>2- VALIDÁ TUS DATOS</h4>
+                <p>Mandános una foto de tu DNI (ambos lados) quién me espera para darme las llaves</p>
+                <h4>3- ABONÁ LA SEÑA</h4>
+                <p>Elegí el medio de pago y aboná el 20% del total.</p>
+                <h4>4- HACÉ EL CHECK IN</h4>
+                <p>Tu BEST HOST te espera desde las 13 hs para entregarte las llaves.</p>
+                <h4>5- DISFRUTÁ TU ESTADIA</h4>
+                <p>Check out hasta las 11 am.</p>
               </MDBCardBody>
             </MDBCollapse>
           </MDBCard>
@@ -103,17 +92,7 @@ class CollapsePage extends Component {
             <MDBCollapse id='collapse3' isOpen={this.state.collapseID}>
               <MDBCardBody className='pt-0'>
                 <p>
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life
-                  accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                  non cupidatat skateboard dolor brunch. Food truck quinoa
-                  nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
-                  aliqua put a bird on it squid single-origin coffee nulla
-                  assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-                  beer labore wes anderson cred nesciunt sapiente ea proident.
-                  Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-                  beer farm-to-table, raw denim aesthetic synth nesciunt you
-                  probably haven't heard of them accusamus labore sustainable
-                  VHS.
+                El mismo día de tu reserva antes del mediodía tu BEST HOST se comunicara con vos para coordinar la entrega de llaves.
                 </p>
               </MDBCardBody>
             </MDBCollapse>
@@ -134,17 +113,7 @@ class CollapsePage extends Component {
             <MDBCollapse id='collapse4' isOpen={this.state.collapseID}>
               <MDBCardBody className='pt-0'>
                 <p>
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life
-                  accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                  non cupidatat skateboard dolor brunch. Food truck quinoa
-                  nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
-                  aliqua put a bird on it squid single-origin coffee nulla
-                  assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-                  beer labore wes anderson cred nesciunt sapiente ea proident.
-                  Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-                  beer farm-to-table, raw denim aesthetic synth nesciunt you
-                  probably haven't heard of them accusamus labore sustainable
-                  VHS.
+                Podemos adelantar la hora de check inn, o, atrasar el check out según la disponibilidad el día previo o el día posterior. Por este motivo le podemos confirmar su petición la noche anterior a su ingreso en el caso del check inn, o, la misma mañana de su salida en el caso del check out.
                 </p>
               </MDBCardBody>
             </MDBCollapse>
@@ -165,17 +134,8 @@ class CollapsePage extends Component {
             <MDBCollapse id='collapse5' isOpen={this.state.collapseID}>
               <MDBCardBody className='pt-0'>
                 <p>
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life
-                  accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                  non cupidatat skateboard dolor brunch. Food truck quinoa
-                  nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
-                  aliqua put a bird on it squid single-origin coffee nulla
-                  assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-                  beer labore wes anderson cred nesciunt sapiente ea proident.
-                  Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-                  beer farm-to-table, raw denim aesthetic synth nesciunt you
-                  probably haven't heard of them accusamus labore sustainable
-                  VHS.
+                Podemos adelantar la hora de check inn, o, atrasar el check out según la disponibilidad el día previo o el día posterior. Por este motivo le podemos confirmar su petición la noche anterior a su ingreso en el caso del check inn, o, la misma mañana de su salida en el caso del check out.
+Su BEST HOST le explicara como hacer el check out.
                 </p>
               </MDBCardBody>
             </MDBCollapse>
@@ -196,17 +156,9 @@ class CollapsePage extends Component {
             <MDBCollapse id='collapse6' isOpen={this.state.collapseID}>
               <MDBCardBody className='pt-0'>
                 <p>
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life
-                  accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                  non cupidatat skateboard dolor brunch. Food truck quinoa
-                  nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
-                  aliqua put a bird on it squid single-origin coffee nulla
-                  assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-                  beer labore wes anderson cred nesciunt sapiente ea proident.
-                  Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-                  beer farm-to-table, raw denim aesthetic synth nesciunt you
-                  probably haven't heard of them accusamus labore sustainable
-                  VHS.
+                Todas nuestras propiedades están amuebladas y cuentan con AA, cocina completa, vajilla, et de electrodomésticos, WIFI, TV con Streaming (Netflix, Youtube) o cable dependiendo la unidad.
+Algunas incluyen caja fuerte, plancha, secador de pelo, cafetera, entre otras cosas. 
+Todas incluyen sábanas y toallas para tu estadía!
                 </p>
               </MDBCardBody>
             </MDBCollapse>
@@ -227,17 +179,7 @@ class CollapsePage extends Component {
             <MDBCollapse id='collapse7' isOpen={this.state.collapseID}>
               <MDBCardBody className='pt-0'>
                 <p>
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life
-                  accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                  non cupidatat skateboard dolor brunch. Food truck quinoa
-                  nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
-                  aliqua put a bird on it squid single-origin coffee nulla
-                  assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-                  beer labore wes anderson cred nesciunt sapiente ea proident.
-                  Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-                  beer farm-to-table, raw denim aesthetic synth nesciunt you
-                  probably haven't heard of them accusamus labore sustainable
-                  VHS.
+                Puedes reservar en el mismo día, pero recomendamos, para una mejor atención un día previo. Con mayor antelación tendrás sin duda más variedad para hacer tu elección de inmueble.
                 </p>
               </MDBCardBody>
             </MDBCollapse>
@@ -258,17 +200,7 @@ class CollapsePage extends Component {
             <MDBCollapse id='collapse8' isOpen={this.state.collapseID}>
               <MDBCardBody className='pt-0'>
                 <p>
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life
-                  accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                  non cupidatat skateboard dolor brunch. Food truck quinoa
-                  nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
-                  aliqua put a bird on it squid single-origin coffee nulla
-                  assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-                  beer labore wes anderson cred nesciunt sapiente ea proident.
-                  Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-                  beer farm-to-table, raw denim aesthetic synth nesciunt you
-                  probably haven't heard of them accusamus labore sustainable
-                  VHS.
+                Mínimo un día, máximo 90 días. Aunque hay algunas unidades donde el mínimo puede variar y ser de 2 o 3 días.
                 </p>
               </MDBCardBody>
             </MDBCollapse>
@@ -289,17 +221,7 @@ class CollapsePage extends Component {
             <MDBCollapse id='collapse9' isOpen={this.state.collapseID}>
               <MDBCardBody className='pt-0'>
                 <p>
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life
-                  accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                  non cupidatat skateboard dolor brunch. Food truck quinoa
-                  nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
-                  aliqua put a bird on it squid single-origin coffee nulla
-                  assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-                  beer labore wes anderson cred nesciunt sapiente ea proident.
-                  Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-                  beer farm-to-table, raw denim aesthetic synth nesciunt you
-                  probably haven't heard of them accusamus labore sustainable
-                  VHS.
+                Elegí tu medio de pago entre: Rapipago - Pagofacil - Transferencia o deposito bancario - Mercado pago (interés del 10%).
                 </p>
               </MDBCardBody>
             </MDBCollapse>
@@ -320,17 +242,7 @@ class CollapsePage extends Component {
             <MDBCollapse id='collapse10' isOpen={this.state.collapseID}>
               <MDBCardBody className='pt-0'>
                 <p>
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life
-                  accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                  non cupidatat skateboard dolor brunch. Food truck quinoa
-                  nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
-                  aliqua put a bird on it squid single-origin coffee nulla
-                  assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-                  beer labore wes anderson cred nesciunt sapiente ea proident.
-                  Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-                  beer farm-to-table, raw denim aesthetic synth nesciunt you
-                  probably haven't heard of them accusamus labore sustainable
-                  VHS.
+                Si avisas con 5 días o más de  anterioridad podemos reacomodar el día de tu reserva. Si el mismo dia no te presentas o no respondes nuestros mensajes no realizamos la devolución de la seña abonada.
                 </p>
               </MDBCardBody>
             </MDBCollapse>
@@ -351,17 +263,7 @@ class CollapsePage extends Component {
             <MDBCollapse id='collapse11' isOpen={this.state.collapseID}>
               <MDBCardBody className='pt-0'>
                 <p>
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life
-                  accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                  non cupidatat skateboard dolor brunch. Food truck quinoa
-                  nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
-                  aliqua put a bird on it squid single-origin coffee nulla
-                  assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-                  beer labore wes anderson cred nesciunt sapiente ea proident.
-                  Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-                  beer farm-to-table, raw denim aesthetic synth nesciunt you
-                  probably haven't heard of them accusamus labore sustainable
-                  VHS.
+                Confiamos en que si realizas el pago de la seña estás seguro de necesitar la reserva. Por eso si cancelas con anterioridad 5 días o más, transferimos tu reserva a otras fechas. De lo contrario, no haremos la devolución de la seña abonada.
                 </p>
               </MDBCardBody>
             </MDBCollapse>
@@ -382,17 +284,7 @@ class CollapsePage extends Component {
             <MDBCollapse id='collapse12' isOpen={this.state.collapseID}>
               <MDBCardBody className='pt-0'>
                 <p>
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life
-                  accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                  non cupidatat skateboard dolor brunch. Food truck quinoa
-                  nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
-                  aliqua put a bird on it squid single-origin coffee nulla
-                  assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-                  beer labore wes anderson cred nesciunt sapiente ea proident.
-                  Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-                  beer farm-to-table, raw denim aesthetic synth nesciunt you
-                  probably haven't heard of them accusamus labore sustainable
-                  VHS.
+                Avisanos con la mayor prontitud a nuestro whats app y a tu host. Asi coordinamos la devolución de tu pertenencia olvidada.
                 </p>
               </MDBCardBody>
             </MDBCollapse>
@@ -413,17 +305,7 @@ class CollapsePage extends Component {
             <MDBCollapse id='collapse13' isOpen={this.state.collapseID}>
               <MDBCardBody className='pt-0'>
                 <p>
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life
-                  accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                  non cupidatat skateboard dolor brunch. Food truck quinoa
-                  nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
-                  aliqua put a bird on it squid single-origin coffee nulla
-                  assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-                  beer labore wes anderson cred nesciunt sapiente ea proident.
-                  Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-                  beer farm-to-table, raw denim aesthetic synth nesciunt you
-                  probably haven't heard of them accusamus labore sustainable
-                  VHS.
+                Solo tu ropa y artículos de higiene personal.
                 </p>
               </MDBCardBody>
             </MDBCollapse>

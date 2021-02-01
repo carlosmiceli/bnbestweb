@@ -24,6 +24,14 @@ a {
     padding: 1em 2em;
 }
 
+.social-media a:hover {
+    cursor: pointer;
+    color: #f8c217;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
 .img-pay {
     margin: 2%;
 }
@@ -33,43 +41,33 @@ a {
 }
 
 .copyright {
-    font-size: 1em;
+    font-size: 2em;
     line-height: 2em;
 }
 
 .copyright a {
-    color: #f8c217;
+    color: #f8c217 !important;
 }
 
-/* @media (min-width:300px) and (max-width:767px){
-    .contenedor{
-        padding: 0px;
+@media (min-width:300px) and (max-width:375px){
+    .copyright {
+        font-size: 1.5em;
+        line-height: 2em;
     }
-    #logo-footer{
-        margin: 40px auto;
-    }
-    .links{
-        text-align: center !important;  
-        padding: 0px !important;
 
-    }
-    #rrss_cont{
-        justify-content: center;        
-        padding: 0px !important;
-
-    }
-    #rrss{
-        margin: 15px;
-    }
+#payments {
+    background-color: #fff;
+    padding-top: 1em;
+    display: flex;
+    flex-wrap: wrap;
 }
-    @media (min-width: 770px) and (max-width: 1000px){
-        .contenedor{
-            padding-left: 2em;
-        }
-        
-        #logo-footer{
-            margin-left: 0 !important;
-        }
-    }
 
- */
+.img-pay {
+    margin: 2%;
+    height: 50%;
+    display: block;
+    margin: auto;
+}
+}
+
+

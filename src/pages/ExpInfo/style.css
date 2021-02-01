@@ -1,92 +1,414 @@
-.contenedor-depto{
-    margin: 5em
+@media only screen and (min-width: 320px) and (max-width: 376px) {
+    .contenedor-depto{
+        margin: 2em
+    }
+    
+    .nombre-depto {
+        margin-top: 30px;
+        text-transform: uppercase; 
+        font-size: 24px;
+    }
+    
+    .seccion1 {
+        display: flex;
+        margin: 30px 0px;
+    }
+    
+    .texto-desc {
+        line-height: 180%;
+    }
+    
+    .seccion2-exp {
+        margin-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+    
+    }
+    
+    .hola-exp {
+        width: 40px;
+        height: 40px;
+        margin-top: 35px;
+    }
+    
+    .chau-exp {
+        width: 200px;
+        padding-left: 50px;
+        padding-top: 5px;
+        font-size: 13px;
+        text-transform: uppercase;
+    }
+    
+    
+    /*iconos servicios*/
+    #duracion {
+        background: url(https://firebasestorage.googleapis.com/v0/b/best-at-3697b.appspot.com/o/iconos%2Fduracion.svg?alt=media&token=4a6f6ef7-b32d-4aca-8962-8120283d3c0a);
+    }
+
+    #incluye {
+        background: url(https://firebasestorage.googleapis.com/v0/b/best-at-3697b.appspot.com/o/iconos%2Fcheck-list.svg?alt=media&token=fa5bf65d-6ae8-49bf-ba5d-48bc8c1c36a8);
+    }
+
+    #traer {
+        background: url(https://firebasestorage.googleapis.com/v0/b/best-at-3697b.appspot.com/o/iconos%2Ftraer.svg?alt=media&token=f7ecc5c2-344c-4dd8-9fe9-804ae1bb3f54);
+    }
+    
+    .seccion3 {
+        margin: 50px 0px;
+    }
+    
+    .seccion4 {
+        margin-top: 30px !important;
+    }
+    
+    .button-reservar {
+        background: #f8c217;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.2em;
+        font-weight: 400;
+        padding: 0.6em 1.2em;
+        margin-top: 1em;
+        text-transform: uppercase;
+    }
+    
+    .button-reservar a {
+        color: #333332 !important;
+    }
+    
+    .button-reservar a:hover {
+        color: #fff !important;
+    }
 }
 
-.nombre-depto {
-    margin-top: 30px;
-    text-transform: uppercase; 
-    font-size: 36px;
+@media only screen and (min-width: 377px) and (max-width: 767px) {
+    .contenedor-depto{
+        margin: 2em
+    }
+    
+    .nombre-depto {
+        margin-top: 30px;
+        text-transform: uppercase; 
+        font-size: 24px;
+    }
+    
+    .seccion1 {
+        display: flex;
+        margin: 30px 0px;
+    }
+    
+    .texto-desc {
+        line-height: 180%;
+    }
+    
+    .seccion2-exp {
+        margin-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .hola-exp {
+        width: 40px;
+        height: 40px;
+        margin-top: 35px;
+    }
+    
+    .chau-exp {
+        width: 350px;
+        padding-left: 50px;
+        padding-top: 5px;
+        font-size: 15px;
+        text-transform: uppercase;
+    }
+    
+    
+    /*iconos servicios*/
+    #duracion {
+        background: url(https://firebasestorage.googleapis.com/v0/b/best-at-3697b.appspot.com/o/iconos%2Fduracion.svg?alt=media&token=4a6f6ef7-b32d-4aca-8962-8120283d3c0a);
+    }
+
+    #incluye {
+        background: url(https://firebasestorage.googleapis.com/v0/b/best-at-3697b.appspot.com/o/iconos%2Fcheck-list.svg?alt=media&token=fa5bf65d-6ae8-49bf-ba5d-48bc8c1c36a8);
+    }
+
+    #traer {
+        background: url(https://firebasestorage.googleapis.com/v0/b/best-at-3697b.appspot.com/o/iconos%2Ftraer.svg?alt=media&token=f7ecc5c2-344c-4dd8-9fe9-804ae1bb3f54);
+    }
+    
+    .seccion3 {
+        margin: 50px 0px;
+    }
+    
+    .seccion4 {
+        margin-top: 30px !important;
+    }
+    
+    .button-reservar {
+        background: #f8c217;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.2em;
+        font-weight: 400;
+        padding: 0.6em 1.2em;
+        margin-top: 1em;
+        text-transform: uppercase;
+    }
+    
+    .button-reservar a {
+        color: #333332 !important;
+    }
+    
+    .button-reservar a:hover {
+        color: #fff !important;
+    }
 }
 
-.seccion1 {
-    display: flex;
-    margin: 30px 0px;
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+    .contenedor-depto{
+        margin: 5em
+    }
+    
+    .nombre-depto {
+        margin-top: 30px;
+        text-transform: uppercase; 
+        font-size: 36px;
+    }
+    
+    .seccion1 {
+        display: flex;
+        margin: 30px 0px;
+    }
+    
+    .texto-desc {
+        line-height: 180%;
+    }
+    
+    .seccion2-exp {
+        margin-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .hola-exp {
+        width: 40px;
+        height: 40px;
+        margin-top: 35px;
+        margin-left: 20px;
+    }
+    
+    .chau-exp {
+        width: 350px;
+        padding-left: 50px;
+        padding-top: 5px;
+        font-size: 15px;
+        text-transform: uppercase;
+    }
+    
+    
+    /*iconos servicios*/
+    #duracion {
+        background: url(https://firebasestorage.googleapis.com/v0/b/best-at-3697b.appspot.com/o/iconos%2Fduracion.svg?alt=media&token=4a6f6ef7-b32d-4aca-8962-8120283d3c0a);
+    }
+
+    #incluye {
+        background: url(https://firebasestorage.googleapis.com/v0/b/best-at-3697b.appspot.com/o/iconos%2Fcheck-list.svg?alt=media&token=fa5bf65d-6ae8-49bf-ba5d-48bc8c1c36a8);
+    }
+
+    #traer {
+        background: url(https://firebasestorage.googleapis.com/v0/b/best-at-3697b.appspot.com/o/iconos%2Ftraer.svg?alt=media&token=f7ecc5c2-344c-4dd8-9fe9-804ae1bb3f54);
+    }
+    
+    .seccion3 {
+        margin: 50px 0px;
+    }
+    
+    .seccion4 {
+        margin-top: 30px !important;
+    }
+    
+    .button-reservar {
+        background: #f8c217;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.2em;
+        font-weight: 400;
+        padding: 0.6em 1.2em;
+        margin-top: 1em;
+        text-transform: uppercase;
+    }
+    
+    .button-reservar a {
+        color: #333332 !important;
+    }
+    
+    .button-reservar a:hover {
+        color: #fff !important;
+    }
 }
 
-.texto-desc {
-    line-height: 180%;
+@media only screen and (min-width: 1280px) {
+    .contenedor-depto{
+        margin: 5em
+    }
+    
+    .nombre-depto {
+        margin-top: 30px;
+        text-transform: uppercase; 
+        font-size: 36px;
+    }
+    
+    .seccion1 {
+        display: flex;
+        margin: 30px 0px;
+    }
+    
+    .texto-desc {
+        line-height: 180%;
+    }
+    
+    .seccion2-exp {
+        margin-bottom: 80px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .hola-exp {
+        width: 40px;
+        height: 40px;
+        margin-top: 35px;
+        margin-left: 20px;
+    }
+    
+    .chau-exp {
+        width: 450px;
+        padding-left: 50px;
+        padding-top: 5px;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+    
+    
+    /*iconos servicios*/
+    #duracion {
+        background: url(https://firebasestorage.googleapis.com/v0/b/best-at-3697b.appspot.com/o/iconos%2Fduracion.svg?alt=media&token=4a6f6ef7-b32d-4aca-8962-8120283d3c0a);
+    }
+
+    #incluye {
+        background: url(https://firebasestorage.googleapis.com/v0/b/best-at-3697b.appspot.com/o/iconos%2Fcheck-list.svg?alt=media&token=fa5bf65d-6ae8-49bf-ba5d-48bc8c1c36a8);
+    }
+
+    #traer {
+        background: url(https://firebasestorage.googleapis.com/v0/b/best-at-3697b.appspot.com/o/iconos%2Ftraer.svg?alt=media&token=f7ecc5c2-344c-4dd8-9fe9-804ae1bb3f54);
+    }
+
+    .seccion3 {
+        margin: 50px 0px;
+    }
+    
+    .seccion4 {
+        margin-top: 30px !important;
+    }
+    
+    .button-reservar {
+        background: #f8c217;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.2em;
+        font-weight: 400;
+        padding: 0.6em 1.2em;
+        margin-top: 1em;
+        text-transform: uppercase;
+    }
+    
+    .button-reservar a {
+        color: #333332 !important;
+    }
+    
+    .button-reservar a:hover {
+        color: #fff !important;
+    }
 }
 
-.seccion2 {
-    margin-bottom: 50px;
-    display: flex;
-    flex-direction: column;
-    flex-flow: wrap;
+@media only screen and (min-width: 1440px) {
+    .contenedor-depto{
+        margin: 5em
+    }
+    
+    .nombre-depto {
+        margin-top: 30px;
+        text-transform: uppercase; 
+        font-size: 36px;
+    }
+    
+    .seccion1 {
+        display: flex;
+        margin: 30px 0px;
+    }
+    
+    .texto-desc {
+        line-height: 180%;
+    }
+    
+    .seccion2-exp {
+        margin-bottom: 80px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .hola-exp {
+        width: 40px;
+        height: 40px;
+        margin-top: 35px;
+        margin-left: 20px;
+    }
+    
+    .chau-exp {
+        width: 450px;
+        padding-left: 50px;
+        padding-top: 5px;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+    
+    
+    /*iconos servicios*/
+    #duracion {
+        background: url(https://firebasestorage.googleapis.com/v0/b/best-at-3697b.appspot.com/o/iconos%2Fduracion.svg?alt=media&token=4a6f6ef7-b32d-4aca-8962-8120283d3c0a);
+    }
+
+    #incluye {
+        background: url(https://firebasestorage.googleapis.com/v0/b/best-at-3697b.appspot.com/o/iconos%2Fcheck-list.svg?alt=media&token=fa5bf65d-6ae8-49bf-ba5d-48bc8c1c36a8);
+    }
+
+    #traer {
+        background: url(https://firebasestorage.googleapis.com/v0/b/best-at-3697b.appspot.com/o/iconos%2Ftraer.svg?alt=media&token=f7ecc5c2-344c-4dd8-9fe9-804ae1bb3f54);
+    }
+
+    .seccion3 {
+        margin: 50px 0px;
+    }
+    
+    .seccion4 {
+        margin-top: 30px !important;
+    }
+    
+    .button-reservar {
+        background: #f8c217;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.2em;
+        font-weight: 400;
+        padding: 0.6em 1.2em;
+        margin-top: 1em;
+        text-transform: uppercase;
+    }
+    
+    .button-reservar a {
+        color: #333332 !important;
+    }
+    
+    .button-reservar a:hover {
+        color: #fff !important;
+    }
 }
 
-.hola {
-    width: 40px;
-    height: 40px;
-    margin-left: 65px;
-    margin-top: 35px;
-}
-
-.chau {
-    padding-left: 50px;
-    padding-top: 12px;
-    font-size: 18px;
-    text-transform: uppercase;
-}
-
-
-/*iconos servicios*/
-#personas {
-    background: url(https://image.flaticon.com/icons/svg/478/478536.svg);
-}
-#pileta {
-    background: url(https://image.flaticon.com/icons/svg/853/853788.svg);
-}
-#balcon {
-    background: url(https://image.flaticon.com/icons/svg/82/82490.svg);
-}
-#piso {
-    background: url(https://image.flaticon.com/icons/svg/544/544917.svg);
-}
-#ascensor {
-    background: url(https://image.flaticon.com/icons/svg/887/887331.svg);
-}
-#wifi {
-    background: url(https://www.flaticon.com/svg/vstatic/svg/297/297186.svg?token=exp=1611593651~hmac=78a796572ae09a9248396e8103816550);
-}
-
-#ac {
-    background: url(https://www.flaticon.com/svg/vstatic/svg/911/911511.svg?token=exp=1611593758~hmac=097181df73a966abc57d0c3257b53119);
-}
-
-#pet {
-    background: url(https://www.flaticon.com/svg/vstatic/svg/884/884183.svg?token=exp=1611593871~hmac=36f3e19b39a274666303de481051409d);
-}
-
-.seccion3 {
-    margin: 50px 0px;
-}
-
-.seccion4 {
-    margin-top: 30px !important;
-}
-
-.button-reservar {
-    background: #f8c217;
-    border: none;
-    border-radius: 5px;
-    color: #333332;
-    font-size: 1.2em;
-    font-weight: 400;
-    padding: 0.6em 1.2em;
-    margin-top: 1em;
-    text-transform: uppercase;
-}
-
-.button-reservar:hover {
-    color: #fff;
-}

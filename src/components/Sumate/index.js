@@ -29,10 +29,11 @@ const Sumate = () => {
         <h2 className='titulo-suma' style={{fontFamily: 'gabelisaregular', color: "#5b5757"}}>Somos BEST</h2>
         <div className='span-sumate'></div>
         <h3 className='texto-suma'>
-          ¿Tenés un depto o una casa de campo pero no tenés tiempo para
-          gestionarlos? <br /> Sumalo a Best y nosotros nos encargamos de todo.
+        Somos un equipo que trabaja para que la experiencia de los huéspedes sea feliz, y para simplificar el trabajo de todos los dueños.
         </h3>
-        <button className='saber-mas' onClick={handleShow}>
+        <button className='sumate-button' 
+        onClick={handleShow}
+        >
           SUMATE!
         </button>
         <SumateForm show={show} onHide={handleClose} />

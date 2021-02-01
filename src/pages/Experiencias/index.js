@@ -4,7 +4,8 @@ import { firestore } from './../../firebase/utils'
 // import { connect } from 'react-redux'
 // import { setAllDeps } from './../../redux/Departamentos/departamentos.actions'
 import Card from "react-bootstrap/Card";
-import FontAwesome from "react-fontawesome";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faClock } from '@fortawesome/free-solid-svg-icons'
 import "./style.css";
 
 // const mapStateToProps = ({ dep }) => ({
@@ -40,17 +41,13 @@ const Experiencias = () => {
       <div className='cont-dptos'>
         {experiences.map(bestexp => (
           <a href={`/experiencias/${bestexp.id}`}>
-            <Card style={{ width: "14.5em" }} key={bestexp.id}>
+            <Card key={bestexp.id}>
               <Card.Img variant='top' src={bestexp.fotos[0]}/>
               <Card.Body>
                 <Card.Title>{bestexp.titulo}</Card.Title>
-                <Card.Text>
-                  Desde ${bestexp.precio} por persona <br />
-                  <FontAwesome
-                    className='fas fa-bed'
-                    name='bed'
-                    style={{ textShadow: "0 1px 0 rgba(0, 0, 0, 0.1)" }}
-                  />{" "}{bestexp.duracion}
+                <Card.Text style={{ display: "flex", flexDirection: "column" }}>
+                  <div>Desde ${bestexp.precio} por persona</div>
+                  <div><FontAwesomeIcon icon={faClock} />{" "}{bestexp.duracion}</div>
                 </Card.Text>
               </Card.Body>
             </Card>
